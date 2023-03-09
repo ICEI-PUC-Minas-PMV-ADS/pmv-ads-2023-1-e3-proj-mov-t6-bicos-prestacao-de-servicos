@@ -165,7 +165,7 @@ A matriz ainda não rastreou todos os artefatos da aplicação pois existem docu
 Assuntos como casos de teste e diagramas ainda não estão previstos nessa versão da matriz, mas serão implementados ao serem criados.
 
 Link da Matriz em excel:
-https://github.com/gisellenrosa/BicosMobile/blob/6f5448258fbd96aec8020ff6944cd399171099b8/docs/img/MATRIZ%20DE%20RASTREABILIDADE.xlsx
+https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/blob/17b7a9ca226a4ec720407ae7565cb2c64489fe75/docs/img/MATRIZ%20DE%20RASTREABILIDADE.xlsx
 
 
 # Gerenciamento de Projeto
