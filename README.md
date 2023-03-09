@@ -1,23 +1,27 @@
-# TÍTULO DO PROJETO
+# BICOS 
+<h3>Prestação de serviços</h3>
 
-`CURSO`
+`Tecnologia em Análise e Desenvolvimento de SistemasO`
 
-`DISCIPLINA`
+`Projeto: Desenvolvimento de uma Aplicação Mobile`
 
-`SEMESTRE`
+`3º semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+Bicos é uma aplicação que pretende facilitar a busca por empregos de diversos tipos de contrato. Muitas pessoas estão com objetivos a longo prazo de conseguirem a independência financeira, e muitas delas procuram empregos temporários como renda extra, bicos é uma app que busca conectar as pessoas com seus objetivos profissionais de curto, médio até mesmo a longo prazo. Com o aplicativo Bicos é possível cadastrar o seu perfil e se inscrever em vagas disponiveis.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+
+* <a href="https://www.linkedin.com/in/gisellenrosa/">Giselle Nepomuceno Rosa</a>
+* <a href="https://github.com/Andre98B">André Barone</a>
+* <a href="https://www.linkedin.com/in/philipe-rocha-0684021b2">Philipe Rocha</a>
+* <a href="https://github.com/PedroVictor022">Pedro Victor</a>
+* <a href="https://github.com/GabrieldeAlmeidaCarvalho">Gabriel de Almeida</a>
+* <a href="https://github.com/RafaelPereira7L">Rafael Pereira</a>
 
 ## Orientador
 
-* Nome completo do professor 1
+* Diego Silva Caldeira Rocha
 
 ## Instruções de utilização
 
