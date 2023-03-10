@@ -1,7 +1,7 @@
 # BICOS 
 <h3>Prestação de serviços</h3>
 
-`Tecnologia em Análise e Desenvolvimento de SistemasO`
+`Tecnologia em Análise e Desenvolvimento de Sistemas`
 
 `Projeto: Desenvolvimento de uma Aplicação Mobile`
 
