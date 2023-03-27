@@ -21,52 +21,40 @@ Realizamos um Wireframe interativo a partir do link: https://www.figma.com/proto
 
 Na Tela Principal, o usuário decide qual é o seu objetivo quando baixou o aplicativo, se é trabalhar ou contratar alguém para algum serviço que necessita.
 
-![image](https://user-images.githubusercontent.com/105240089/228087709-f8b12ea9-bc64-4916-af72-289ca572afea.png)
+![image](https://user-images.githubusercontent.com/105240089/228089519-3cca29b8-9956-4703-b740-ce85b5f089ee.png)
 
  - TELA DE LOGIN
 
 Na Tela de Login, nós focamos em deixá-la o mais simples possível para que o usuário não tenha muitas distrações e que seja direto ao ponto, login ou cadastrar.
 
-![image](https://user-images.githubusercontent.com/105240089/228087758-46cab35b-8cc8-4396-9137-819e82088208.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228087785-6dc590fc-f3a4-4b96-b28c-f3af0d5b8b02.png)
+![image](https://user-images.githubusercontent.com/105240089/228087758-46cab35b-8cc8-4396-9137-819e82088208.png)     ![image](https://user-images.githubusercontent.com/105240089/228087785-6dc590fc-f3a4-4b96-b28c-f3af0d5b8b02.png)
 
  - TELA DE CADASTRO
 
 Diferente da de login, o foco aqui é cadastrr o usuário pro que ele escolheu na tela princpal e caso já haja um registro, que volte para a tela de login e realize-o.
 
-![image](https://user-images.githubusercontent.com/105240089/228087841-93a728f1-6211-47ba-a8b2-631aab664449.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228087885-a6913215-604e-4dac-80a0-73208a18ccf8.png)
+![image](https://user-images.githubusercontent.com/105240089/228087841-93a728f1-6211-47ba-a8b2-631aab664449.png)     ![image](https://user-images.githubusercontent.com/105240089/228087885-a6913215-604e-4dac-80a0-73208a18ccf8.png)
 
  - HOMEPAGE
 
 A partir daqui, as opções mudam mais de acordo com o que o usuário escolheu, e ele pode navegar por todas as outras telas a partir desta.
 
-![image](https://user-images.githubusercontent.com/105240089/228087995-8c77a6be-aeb3-44ac-8b17-6dd76025e444.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228087944-c920b89e-699d-4801-a421-743df87a666d.png)
+![image](https://user-images.githubusercontent.com/105240089/228087995-8c77a6be-aeb3-44ac-8b17-6dd76025e444.png)     ![image](https://user-images.githubusercontent.com/105240089/228087944-c920b89e-699d-4801-a421-743df87a666d.png)
  
  - PERFIL
 
 Na Tela de Perfil, o usuário poderá aprimorar seus dados e personalizar suas escolhas e preferências para melhor resultado.
 
-![image](https://user-images.githubusercontent.com/105240089/228088023-ef05c7d2-ba7f-45a4-8f7f-23045e3c63be.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228088152-856389e4-e76e-4fba-bd07-ac1532bc25fd.png)
+![image](https://user-images.githubusercontent.com/105240089/228088023-ef05c7d2-ba7f-45a4-8f7f-23045e3c63be.png)     ![image](https://user-images.githubusercontent.com/105240089/228088152-856389e4-e76e-4fba-bd07-ac1532bc25fd.png)
 
 
-![image](https://user-images.githubusercontent.com/105240089/228088070-81283628-c621-45b1-a35c-9512959f5af6.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228088111-5a2e8ebb-ae7f-48d7-9855-090519dc04ad.png)
+![image](https://user-images.githubusercontent.com/105240089/228088070-81283628-c621-45b1-a35c-9512959f5af6.png)     ![image](https://user-images.githubusercontent.com/105240089/228088111-5a2e8ebb-ae7f-48d7-9855-090519dc04ad.png)
 
  - EXPLORAR
 
 A parte do Trabalhador está focada em procurar um serviço e para o Contratante, encontrar o mais capacitado para a realização da tarefa oferecida.
 
-![image](https://user-images.githubusercontent.com/105240089/228088209-4a9c1bb2-aa67-40af-b10c-0c9db887c9df.png)
-
-![image](https://user-images.githubusercontent.com/105240089/228088232-f001dbfc-d8c6-4ed5-806c-b5af39b6c85e.png)
+![image](https://user-images.githubusercontent.com/105240089/228088209-4a9c1bb2-aa67-40af-b10c-0c9db887c9df.png)     ![image](https://user-images.githubusercontent.com/105240089/228088232-f001dbfc-d8c6-4ed5-806c-b5af39b6c85e.png)
 
  - INCLUIR SERVIÇO
 
