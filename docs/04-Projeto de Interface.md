@@ -52,7 +52,8 @@ Na Tela de Perfil, o usuário poderá aprimorar seus dados e personalizar suas e
 
  - EXPLORAR
 
-A parte do Trabalhador está focada em procurar um serviço e para o Contratante, encontrar o mais capacitado para a realização da tarefa oferecida.
+A parte do Trabalhador está focada em procurar um serviço e para o Contratante, a possibilidade de conferir e filtrar seus próprios serviços inclusos, 
+permitindo ver candidatos confirmando ou não o trabalho.
 
 ![image](https://user-images.githubusercontent.com/105240089/228088209-4a9c1bb2-aa67-40af-b10c-0c9db887c9df.png)     ![image](https://user-images.githubusercontent.com/105240089/228088232-f001dbfc-d8c6-4ed5-806c-b5af39b6c85e.png)
 
