@@ -55,9 +55,12 @@ Na Tela de Perfil, o usuário poderá aprimorar seus dados e personalizar suas e
 A parte do Trabalhador está focada em procurar um serviço e para o Contratante, a possibilidade de conferir e filtrar seus próprios serviços inclusos, 
 permitindo ver candidatos confirmando ou não o trabalho.
 
-![image](https://user-images.githubusercontent.com/105240089/228088209-4a9c1bb2-aa67-40af-b10c-0c9db887c9df.png)     ![image](https://user-images.githubusercontent.com/105240089/228088232-f001dbfc-d8c6-4ed5-806c-b5af39b6c85e.png)
+![image](https://user-images.githubusercontent.com/105240089/228088209-4a9c1bb2-aa67-40af-b10c-0c9db887c9df.png)  ![image](https://user-images.githubusercontent.com/68014636/228982865-c4191b1e-ac80-4f50-8acd-c25de1a31d3e.png)
+   
+![image](https://user-images.githubusercontent.com/68014636/228982915-7c243c0d-e013-4ad8-9bf5-e5c06dcf620e.png)    ![image](https://user-images.githubusercontent.com/105240089/228088232-f001dbfc-d8c6-4ed5-806c-b5af39b6c85e.png)
 
- - INCLUIR SERVIÇO
+
+ - INCLUIR / EDITAR SERVIÇO
 
 Está tela é unicamente do Contratante, aqui ele inclui o serviço que ele precisa.
 
