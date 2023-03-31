@@ -1,6 +1,8 @@
 # BICOS 
 <h3>Prestação de serviços</h3>
 
+![WhatsApp Image 2023-03-30 at 22 42 14](https://user-images.githubusercontent.com/55036173/229002162-1a7c423b-858c-49f2-b6cb-56cb3ef46541.jpeg)
+
 `Tecnologia em Análise e Desenvolvimento de Sistemas`
 
 `Projeto: Desenvolvimento de uma Aplicação Mobile`
