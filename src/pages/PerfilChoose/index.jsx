@@ -1,11 +1,12 @@
 import { Text, View } from "react-native";
-import { useCallback } from "react/cjs/react.production.min";
+import { useCallback, useNavigation } from "react/cjs/react.production.min";
 import BackgroundImage from "../../components/BackgroundImage";
 import BirdsButton from "../../components/BirdsButton";
 import Slogan from "../../components/Slogan";
 import styles from "./styles";
 
-const PerfilChoose = ({ navigation }) => {
+const PerfilChoose = () => {
+	const navigation = useNavigation();
 	const handleToLogin = useCallback(() => {
 		navigation.navigate("login");
 	}, []);
