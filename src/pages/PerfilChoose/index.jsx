@@ -13,7 +13,7 @@ const PerfilChoose = () => {
 				<Text style={styles.questionText}>O que você busca?</Text>
 
 				<View style={styles.buttonAlign}>
-					<BirdsButton title="Trabalhar" />
+					<BirdsButton title="Trabalhar" onPress={} />
 					<BirdsButton title="Contratar" contractButton={true} />
 				</View>
 			</View>
