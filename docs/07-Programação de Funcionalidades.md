@@ -4,6 +4,13 @@
 
 Implementação do sistema descritas por meio dos requisitos funcionais e/ou não funcionais. Deve relacionar os requisitos atendidos os artefatos criados (código fonte) além das estruturas de dados utilizadas e as instruções para acesso e verificação da implementação que deve estar funcional no ambiente de hospedagem.
 
+Implementação do projeto de interface: <br />
+https://www.figma.com/file/H1LvDAe39TLO9qtRYDHXs0/BICOS---SERVI%C3%87OS?node-id=0%3A1&t=P1ssASyalRN3n5AK-1
+
+Print atual do quadro de gestão do projeto (Click Up):
+
+![image](https://user-images.githubusercontent.com/68014636/229302388-93321b72-27f9-48a2-800e-4a918979d013.png)
+
 Para cada requisito funcional, pode ser entregue um artefato desse tipo
 
 > **Links Úteis**:
