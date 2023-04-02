@@ -1,27 +1,52 @@
-import { Text, View } from "react-native";
-import { useCallback, useNavigation } from "react/cjs/react.production.min";
+import { useNavigation } from "@react-navigation/native";
+import { useCallback } from "react";
+import HireBirds from "../../assets/hireBirds";
+import WorkBirds from "../../assets/workBirds";
 import BackgroundImage from "../../components/BackgroundImage";
-import BirdsButton from "../../components/BirdsButton";
 import Slogan from "../../components/Slogan";
-import styles from "./styles";
+import {
+	BirdImageContent,
+	Button,
+	Container,
+	ContainerButton,
+	HireContent,
+	QuestionText,
+	Text,
+	WorkContent,
+} from "./styles";
 
 const PerfilChoose = () => {
 	const navigation = useNavigation();
 	const handleToLogin = useCallback(() => {
-		navigation.navigate("login");
+		navigation.navigate("Login");
 	}, []);
 
 	return (
 		<BackgroundImage>
-			<View style={styles.container}>
+			<Container>
 				<Slogan text="A melhor plataforma para prestação e contratação de serviços" />
-				<Text style={styles.questionText}>O que você busca?</Text>
+				<QuestionText>O que você busca?</QuestionText>
 
-				<View style={styles.buttonAlign}>
-					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
-					<BirdsButton title="Contratar" contractButton={true} />
-				</View>
-			</View>
+				<ContainerButton>
+					<WorkContent>
+						<BirdImageContent>
+							<WorkBirds />
+						</BirdImageContent>
+						<Button onPress={handleToLogin}>
+							<Text>Trabalhar</Text>
+						</Button>
+					</WorkContent>
+
+					<HireContent>
+						<BirdImageContent>
+							<HireBirds />
+						</BirdImageContent>
+						<Button>
+							<Text>Contratar</Text>
+						</Button>
+					</HireContent>
+				</ContainerButton>
+			</Container>
 		</BackgroundImage>
 	);
 };
