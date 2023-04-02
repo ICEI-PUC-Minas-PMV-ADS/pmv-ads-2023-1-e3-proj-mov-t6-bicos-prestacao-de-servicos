@@ -21,6 +21,12 @@ Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a 
 
 ## Controle de Versão
 
+Para a gestão do código fonte será utilizado o modelo de processo baseado no Git Flow, como mostrado na figura a seguir:
+
+![git](https://user-images.githubusercontent.com/100283917/192118295-077f7020-72df-4af2-83d4-b46af1599a44.png)
+
+Figura 1 - Fluxo de controle do código fonte
+
 A ferramenta de controle de versão adotada no projeto foi o
 [Git](https://git-scm.com/), sendo que o [Github](https://github.com)
 foi utilizado para hospedagem do repositório.
