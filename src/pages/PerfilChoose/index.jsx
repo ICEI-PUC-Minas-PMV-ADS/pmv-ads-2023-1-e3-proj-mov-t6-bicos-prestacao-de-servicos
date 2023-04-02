@@ -18,7 +18,7 @@ const PerfilChoose = () => {
 				<QuestionText>O que você busca?</QuestionText>
 
 				<ContainerButton>
-					<BirdsButton title="Trabalhar" pressOn={handleToLogin} />
+					<BirdsButton title="Trabalhar" click={handleToLogin} />
 
 					<BirdsButton title="Contratar" contractButton={true} />
 				</ContainerButton>
