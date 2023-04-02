@@ -10,18 +10,13 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Classes”.
-
-> - [Diagramas de Classes - Documentação da IBM](https://www.ibm.com/docs/pt-br/rational-soft-arch/9.6.1?topic=diagrams-class)
-> - [O que é um diagrama de classe UML? | Lucidchart](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml)
+![UML](img/uml.png)
 
 ## Modelo ER
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.]
 
-As referências abaixo irão auxiliá-lo na geração do artefato “Modelo ER”.
-
-> - [Como fazer um diagrama entidade relacionamento | Lucidchart](https://www.lucidchart.com/pages/pt/como-fazer-um-diagrama-entidade-relacionamento)
+![UML](img/er.png)
 
 ## Esquema Relacional
 
@@ -54,15 +49,175 @@ Explique como a hospedagem e o lançamento da plataforma foi feita.
 
 ## Qualidade de Software
 
-Conceituar qualidade de fato é uma tarefa complexa, mas ela pode ser vista como um método gerencial que através de procedimentos disseminados por toda a organização, busca garantir um produto final que satisfaça às expectativas dos stakeholders.
+Para avaliar a qualidade do software desenvolvido, foram selecionadas algumas características e subcaracterísticas que serão importantes para avaliar os pontos mais importantes do sistema de acordo com a ISO/IEC 25010, sendo elas:
 
-No contexto de desenvolvimento de software, qualidade pode ser entendida como um conjunto de características a serem satisfeitas, de modo que o produto de software atenda às necessidades de seus usuários. Entretanto, tal nível de satisfação nem sempre é alcançado de forma espontânea, devendo ser continuamente construído. Assim, a qualidade do produto depende fortemente do seu respectivo processo de desenvolvimento.
+<h3>1) Eficiência de desempenho:</h3> 
+ A) Comportamento temporal<br />
+ B) Utilização de recursos
+ <br />
+ <br />
+ <i>
+ A eficiência de desempenho e as subcaracterísticas listadas serão importantes para avaliar o tempo de resposta da aplicação ao requisitar os dados e o quanto de equipamento / rede é necessário para usar o sistema, julgando-se indispensável avaliar esses pontos uma vez que o sistema deve ter uma resposta rápida nas consultas.
+ </i>
+ 
+ <hr />
+ 
+<h3>2) Compatibilidade</h3>
+ A) Coexistência
+ <br />
+ <br />
+ <i>
+ A compatibilidade e as subcaracterísticas listadas serão importantes para avaliar principalmente se a utilização do aplicativo força o usuário a ter que remover outros sistemas que ele já use, sendo isso um cenário indesejado para o uso do sistema.
+ </i>
+ <hr />
+ 
+<h3> 3) Usabilidade </h3>
+ A) Apreensibilidade<br />
+ B) Proteção a erros<br />
+ C) Estética da interface<br />
+ D) Acessabilidade
+ <br />
+ <br />
+ <i>
+ A usabilidade e as subcaracterísticas listadas serão importantes para avaliar a experência do usuário com a interface do sistema, o que é algo indispensável para termos noções de dados como a dificildade para executar as rotinas do sistema, se são difíceis de se executar, se o usuário tem recursos que o impeçam de errar ao informar, por exemplo, dados inválidos, se o visual da interface está moderno e confortável além de verificar a acessabilidade geral e inclusão de todos em seu uso.
+ </i>
+<hr />
+ 
+<h3>4) Confiabilidade</h3>
+ A) Maturidade <br />
+ B) Indisponibilidade
+ <br />
+ <br />
+ <i>
+  A confiabilidade e as subcaracterísticas listadas serão importantes para avaliar o quanto o sistema será confiável apresentando maturidade, ou seja, ter uma baixa frequência de erros e tratamentos em situações inexperadas, além de ter uma baixa indisponibilidade, sendo possível acessá-lo sempre que precisar.
+ </i>
+   <hr />
+  
+<h3>5) Segurança</h3>
+ A) Confidenciabilidade <br />
+ B) Integridade
+ <br />
+ <br />
+ <i>
+ A segurança e as subcaracterísticas listadas serão importantes para avaliar principalmente o cuidado com os dados do usuário e sua preservação, demonstrando grande confidenciabilidade ao armazená-los corretamente e ocultar os dados sensíveis, além de exibir os dados corretamente com integridade.
+ </i>
+  <hr />
+ 
+<h3>6) Manutenabilidade </h3>
+ A) Reusabilidade <br />
+ B) Analisabilidade <br />
+ C) Modificabilidade <br />
+ D) Testabilidade
+ <br />
+ <br />
+ <i>
+ A manutenabilidade e as subcaracterísticas listadas serão importantes para avaliar a qualidade do código fonte do sistema e a facilidade de trabalhar com ele, desejando-se ter uma boa reusabilidade através dos componentes que o ambiente de desenvolvimento (React Native) possibilita, que é a componentização, além do código ser fácil de análisar com boa identação, bem organizado e seguindo o padrão do restante da aplicação, também exibindo boa modificabilidade ao incluir ou corrigir funcionalidades com velocidade e clareza, e por fim, ser fácil de testar e que possibilite isso sem grandes problemas.
+ </i>
+  <hr />
+ 
+<h3>7) Portabilidade</h3>
+ A) Facilidade para instalação
+ <br />
+ <br />
+ <i>
+ A portabilidade e as subcaracterísticas listadas serão importantes para avaliar se o sistema foi instalado sem mais problemas, necessitando de ser um processo simples que todos consigam fazer.
+ </i>
+  <hr />
+ 
+ <h3> Métricas de avaliação</h3>
+ 
+Esses foram as características e subcaracterísticas selecionadas pois foram julgadas indispensáveis e importantes para que o projeto tenha sucesso em seus objetivos.
+Foram justificadas após enumerar cada uma, o motivo que se usou a característica e também as subcaracterísticas, que estão entendidas na descrição de acordo com suas definições.
 
-A norma internacional ISO/IEC 25010, que é uma atualização da ISO/IEC 9126, define oito características e 30 subcaracterísticas de qualidade para produtos de software.
-Com base nessas características e nas respectivas sub-características, identifique as sub-características que sua equipe utilizará como base para nortear o desenvolvimento do projeto de software considerando-se alguns aspectos simples de qualidade. Justifique as subcaracterísticas escolhidas pelo time e elenque as métricas que permitirão a equipe avaliar os objetos de interesse.
+Para ter o valor da qualidade de software através dessas características, criou-se métricas que possibilitam avaliar esses pontos, as perguntas / questionamentos abaixo que serão utilizadas pelos avaliadores do sistema abrangendo todas as subcaracterísticas e consequentemente as caracaterísticas anteriormente listadas:
 
-> **Links Úteis**:
->
-> - [ISO/IEC 25010:2011 - Systems and software engineering — Systems and software Quality Requirements and Evaluation (SQuaRE) — System and software quality models](https://www.iso.org/standard/35733.html/)
-> - [Análise sobre a ISO 9126 – NBR 13596](https://www.tiespecialistas.com.br/analise-sobre-iso-9126-nbr-13596/)
-> - [Qualidade de Software - Engenharia de Software 29](https://www.devmedia.com.br/qualidade-de-software-engenharia-de-software-29/18209/)
+<h5>
+
+   1) O tempo de resposta ao requisitar um dado para o sistema é: <br />
+    A) Ruim <br />
+    B) Regular <br />
+    C) Bom <br />
+    D) Muito bom <br />
+    
+   
+   2) Como o seu celular executa o sistema: <br />
+    A) Rapidamente <br />
+    B) Lentamente <br />
+    C) Instantâneamente <br />
+    D) Travando <br />
+    
+   
+   3) Houve algum conflito com outro aplicativo ao instalar o sistema? <br />
+    A) Sim <br />
+    B) Não <br />
+    
+    
+   4) As rotinas do sistema são: <br />
+			 A) Fáceis de usar <br />
+			 B) Difíceis de usar <br />
+    
+
+   5) O sistema normalmente exibe erros por informar dados incorretamente?<br />
+    A) Sim <br />
+    B) Quase sempre  <br />
+    C) Quase nunca <br />
+    D) Não <br />
+    
+    
+   6) A interface do sistema é visualmente falando: <br />
+    A) Excelente <br />
+    B) Boa <br />
+    C) Razoável  <br />
+    D) Ruim <br />
+    
+   7) O sistema possui empechilhos ao utilizar sua interface? <br />
+			 A) Não <br />
+		  B) Sim <br />
+    
+   8) A frequência que o sistema exibe erros é: <br />
+    A) O tempo todo <br />
+    B) As vezes <br />
+    C) Raramente <br />
+    D) Nunca <br />
+    
+  9) Você já tentou acessar o sistema e o encontrou indisponível? <br />
+    A) Sim <br />
+    B) Quase sempre  <br />
+    C) Quase nunca <br />
+    D) Não <br />
+    
+  10) Os dados sensíveis informados no sistema são: <br />
+    A) Expostos <br />
+    D) Protegidos <br />
+    
+  11) Os dados informados no sistema quando exibidos são: <br />
+    A) Confiáveis <br />
+    B) Duvidosos <br />
+    
+  12) A frequência de uso dos componentes no sistema para reutilizar ocorre: <br />
+    A) Sempre <br />
+    B) Quase sempre <br />
+    C) As vezes <br />
+    D) Nunca <br />
+    
+  13) O código é facilmente entendido e claro? <br />
+    A) Sim <br />
+    B) Não <br />
+
+  14) O código pode ser facilmente alterado? <br />
+    A) Sim <br />
+    B) Não <br />
+     
+  15) A realização de testes no sistema normalmente é <br />
+    A) Fácil <br />
+    B) Possível <br />
+    C) Difícil <br />
+    D) Impossível <br />
+    
+  16) O processo de instalação do sistema é: <br />
+    A) Fácil <br />
+    B) Possível <br />
+    C) Difícil <br />
+    D) Impossível <br />
+ 
+ </h5>
