@@ -33,11 +33,9 @@ export const Box = styled.View`
 export const BoxInput = styled.View`
 	display: flex;
 	flex-direction: row;
-	max-width: 600px;
 	width: 100%;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-
 	border: 1px solid #e6e6e6;
 	background-color: #fff;
 `;

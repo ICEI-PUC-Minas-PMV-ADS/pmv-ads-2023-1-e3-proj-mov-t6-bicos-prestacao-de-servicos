@@ -41,11 +41,18 @@ export const SignUpContainer = styled.View`
 export const BoxIcon = styled.View`
 	display: flex;
 	flex-direction: row;
-	margin-top: 60px;
-	margin-bottom: 30px;
+	align-items: center;
+	margin-left: -40px;
+`;
+export const LoginText = styled.Text`
+	margin: 10px 20px 10px 0;
+	color: #777;
+	font-size: 15px;
+	text-align: right;
+	font-family: DMSans_400Regular;
 `;
 export const SignUpText = styled.Text`
-	color: black;
+	color: #777;
 	font-size: 15px;
 	text-align: center;
 	font-family: DMSans_400Regular;

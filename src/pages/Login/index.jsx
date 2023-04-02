@@ -16,6 +16,7 @@ import {
 	BoxIcon,
 	Button,
 	Container,
+	LoginText,
 	LoginTitle,
 	SignUpLink,
 	SignUpText,
@@ -54,6 +55,7 @@ const Login = () => {
 							</BoxInput>
 						</FieldBox>
 					</Fields>
+					<LoginText>Esqueceu a senha?</LoginText>
 					<Button>
 						<TextButton>Entrar</TextButton>
 					</Button>
