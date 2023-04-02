@@ -16,14 +16,14 @@ Por exemplo:
 |Critério de Êxito | -  Redirecionar para tela de Login |
 
 
-| **Caso de Teste** 	| **CT-002 – Tela de  Cadastro** 	|
+| **Caso de Teste** 	| **CT-002 – Tela de Login** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-012 - RF-012	A aplicação deverá permitir que os usuários façam o login e cadastro |
 | Objetivo do Teste 	| Verificar se a existe é possivel Logar na aplicação. |
 | Passos 	| - Acessar o App <br> - Clica na opção Trabalhar e Clicar na opçâo cadastre-se,<br> preencher todos os campos obrigatórios (e-mail e senha) - Clicar em "Entrar" |
 |Critério de Êxito |  - Redirecionar para tela de busca de vagas |
 
-| **Caso de Teste** 	| **CT-003 – Tela de  Login** 	|
+| **Caso de Teste** 	| **CT-003 – Tela de  Cadastro** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-012 - RF-012	A aplicação deverá permitir que os usuários façam o login e cadastro |
 | Objetivo do Teste 	| Verificar se a existe é possivel seCadastrar na aplicação. |
