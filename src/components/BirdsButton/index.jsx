@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 import styles from "./styles";
 
-import HireBird from "../../assets/hireBird";
+import ToHireBirds from "../../assets/toHireBirds";
 import WorkBird from "../../assets/workBird";
 
 const BirdsButton = (props) => {
@@ -11,7 +11,7 @@ const BirdsButton = (props) => {
 			{props.contractButton ? (
 				<>
 					<View style={styles.birdsArea}>
-						<HireBird />
+						<ToHireBirds />
 					</View>
 				</>
 			) : (
