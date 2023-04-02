@@ -7,8 +7,14 @@ Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Defini�
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+
+|     Ambiente  |    Plataforma      |     Link    |
+|--------------------|------------------------------------|----------------------------------------|
+| Repositório de código fonte | GitHub | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/
+|  Gerenciamento do Projeto |   GitHub  | https://app.clickup.com/37019511/v/l/139qvq-83 |  
+|  Projeto de Interface e  Wireframes  | Figma  | https://www.figma.com/file/H1LvDAe39TLO9qtRYDHXs0/BICOS---SERVI%C3%87OS?node-id=20-3&t=VgLMmtXZ72w3Om8A-0   |
+|  Reuniões  |  Google Meets  | https://meet.google.com/cwj-wvoi-voj |
+
 
 ## Controle de Versão
 
