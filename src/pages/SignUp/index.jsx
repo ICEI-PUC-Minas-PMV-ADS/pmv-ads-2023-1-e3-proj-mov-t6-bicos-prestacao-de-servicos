@@ -20,8 +20,6 @@ import {
 	BoxIcon,
 	Button,
 	Container,
-	LoginText,
-	LoginTitle,
 	SignUpLink,
 	SignUpText,
 	TextButton,
@@ -36,8 +34,7 @@ const SignUp = () => {
 	return (
 		<BackgroundImage>
 			<Container>
-				<Slogan text="Seja bem-vindo de volta!" />
-				<LoginTitle>Cadastre-se e aproveite os serviços da Bicos </LoginTitle>
+				<Slogan text="Cadastre-se e aproveite os serviços da Bicos" />
 				<ContainerForm>
 					<Fields>
 						<FieldBox>
@@ -97,7 +94,6 @@ const SignUp = () => {
 							</BoxInput>
 						</FieldBox>
 					</Fields>
-					<LoginText>Esqueceu a senha?</LoginText>
 					<Button>
 						<TextButton>Cadastrar</TextButton>
 					</Button>

@@ -27,7 +27,7 @@ import {
 } from "./styles";
 const Login = () => {
 	const navigation = useNavigation();
-	const handleToLogin = useCallback(() => {
+	const handleToSignUp = useCallback(() => {
 		navigation.navigate("SignUp");
 	}, []);
 
@@ -69,7 +69,7 @@ const Login = () => {
 					</Button>
 					<SignUpDescription>
 						<SignUpText>Novo Aqui?</SignUpText>
-						<SignUpLink onPress={handleToLogin}>Cadastre-se</SignUpLink>
+						<SignUpLink onPress={handleToSignUp}>Cadastre-se</SignUpLink>
 					</SignUpDescription>
 				</ContainerForm>
 			</Container>
