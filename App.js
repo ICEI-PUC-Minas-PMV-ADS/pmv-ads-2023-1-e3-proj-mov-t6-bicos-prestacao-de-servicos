@@ -1,34 +1,31 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
+import * as SplashScreen from 'expo-splash-screen';
 import Home from './src/pages/Home'
 import PerfilChoose from './src/pages/PerfilChoose'
-
-import {
-    useFonts,
-    DMSans_400Regular,
-    DMSans_500Medium,
-    DMSans_700Bold
-} from '@expo-google-fonts/dm-sans'
-
-import {
-    Roboto_300Light,
-    Roboto_100Thin
-} from '@expo-google-fonts/roboto'
-
 import AppLoading from "expo-app-loading";
+
+import useFonts from "./src/hooks/useFonts";
+
+
 
 const App = () => {
 
-    const { fontsLoaded } = useFonts({
-        Roboto_100Thin,
-        Roboto_300Light,
-        DMSans_400Regular,
-        DMSans_500Medium,
-        DMSans_700Bold
-    })
-
-    if(!fontsLoaded) {
-        <AppLoading />
-    }
+    const [IsReady, SetIsReady] = useState(false);
+      
+    const LoadFontsAndRestoreToken = async () => {
+        await useFonts();
+    };
+      
+        if (!IsReady) {
+          return (
+            <AppLoading
+              startAsync={LoadFontsAndRestoreToken}
+              onFinish={() => SetIsReady(true)}
+              onError={() => {}}
+            />
+          );
+        }
+      
 
     return (
         
