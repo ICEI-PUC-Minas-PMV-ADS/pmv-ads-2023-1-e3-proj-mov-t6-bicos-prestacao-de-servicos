@@ -88,10 +88,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
+|ID     | Descrição do Requisito  | Prioridade |
+|-------|-----------------------------------------|-----|
 |RF-001| A aplicação deverá possuir uma apresentação breve do aplicativo | BAIXA |
-|RF-002| A aplicação deverá cadastrar dois tipos de usuários, o contratatante e o contratado | ALTA | 
+|RF-002| A aplicação deverá permitir o cadastro de dois tipos de usuários, o trabalhador em "Trabalhar" e o contratante em "Contratar" | ALTA | 
 |RF-003| A aplicação deverá permitir a edição do perfil desses usuários | ALTA | 
 |RF-004| A aplicação terá um perfil de usuário para o contratado com suas qualificações e preferências | ALTA | 
 |RF-005| A aplicação deverá permitir o contratante criar oportunidades de serviço | ALTA|
