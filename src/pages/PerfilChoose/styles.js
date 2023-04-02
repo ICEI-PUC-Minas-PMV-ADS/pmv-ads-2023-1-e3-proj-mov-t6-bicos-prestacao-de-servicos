@@ -16,11 +16,11 @@ export const QuestionText = styled.Text`
 `;
 
 export const ContainerButton = styled.View`
-	padding-top: 60;
+	padding-top: 60px;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	align-items: center;
 	justify-content: space-evenly;
-	border-radius: 20;
+	border-radius: 20px;
 `;

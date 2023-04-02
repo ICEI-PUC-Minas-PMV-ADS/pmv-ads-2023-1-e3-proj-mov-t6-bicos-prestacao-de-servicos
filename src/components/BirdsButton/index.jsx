@@ -22,7 +22,7 @@ const BirdsButton = (props) => {
 				</>
 			)}
 
-			<TouchableOpacity style={styles.button} onPress={props.click}>
+			<TouchableOpacity style={styles.button} onPress={props.onPress}>
 				<Text style={styles.textButton}>{props.title}</Text>
 			</TouchableOpacity>
 		</View>
