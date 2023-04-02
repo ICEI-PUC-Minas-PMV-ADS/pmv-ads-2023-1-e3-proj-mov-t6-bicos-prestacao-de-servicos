@@ -1,28 +1,26 @@
-import { StyleSheet } from 'react-native';
+import styled from "styled-components";
 
-const styles = StyleSheet.create({
+export const Container = styled.View`
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+	box-sizing: border-box;
+`;
 
-    container: {
-        height: '100%',
-        justifyContent: 'center'
-    },
-    questionText: {
-        color: 'white',
-        fontSize: 20,
-        textAlign: 'center',
-        paddingTop: 25,
-        fontFamily: 'DMSans_700Bold'
-    },
-    buttonAlign: {
-        paddingTop: 60,
-        display: 'flex',
-        flexDirection: 'row',
-        width: '100%',
-        alignItems: 'center',
-        justifyContent: 'space-evenly',
-        borderRadius: 20,
-    }
-    
-});
+export const QuestionText = styled.Text`
+	color: white;
+	font-size: 20px;
+	text-align: center;
+	padding-top: 25px;
+	font-family: DMSans_700Bold;
+`;
 
-export default styles;
+export const ContainerButton = styled.View`
+	padding-top: 60px;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	align-items: center;
+	justify-content: space-evenly;
+	border-radius: 20px;
+`;

@@ -1,22 +1,28 @@
-import { Text, View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { useCallback } from "react";
 import BackgroundImage from "../../components/BackgroundImage";
 import BirdsButton from "../../components/BirdsButton";
 import Slogan from "../../components/Slogan";
-
-import styles from "./styles";
+import { Container, ContainerButton, QuestionText } from "./styles";
 
 const PerfilChoose = () => {
+	const navigation = useNavigation();
+	const handleToLogin = useCallback(() => {
+		navigation.navigate("Login");
+	}, []);
+
 	return (
 		<BackgroundImage>
-			<View style={styles.container}>
+			<Container>
 				<Slogan text="A melhor plataforma para prestação e contratação de serviços" />
-				<Text style={styles.questionText}>O que você busca?</Text>
+				<QuestionText>O que você busca?</QuestionText>
 
-				<View style={styles.buttonAlign}>
-					<BirdsButton title="Trabalhar" />
+				<ContainerButton>
+					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
+
 					<BirdsButton title="Contratar" contractButton={true} />
-				</View>
-			</View>
+				</ContainerButton>
+			</Container>
 		</BackgroundImage>
 	);
 };
