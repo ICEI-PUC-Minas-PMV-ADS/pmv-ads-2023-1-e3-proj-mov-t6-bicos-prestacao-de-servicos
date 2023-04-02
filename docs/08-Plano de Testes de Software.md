@@ -4,8 +4,33 @@
 
 Apresente os cenários de testes utilizados na realização dos testes da sua aplicação. Escolha cenários de testes que demonstrem os requisitos sendo satisfeitos.
 
-Enumere quais cenários de testes foram selecionados para teste. Neste tópico o grupo deve detalhar quais funcionalidades avaliadas, o grupo de usuários que foi escolhido para participar do teste e as ferramentas utilizadas.
+Não deixe de enumerar os casos de teste de forma sequencial e de garantir que o(s) requisito(s) associado(s) a cada um deles está(ão) correto(s) - de acordo com o que foi definido na seção "2 - Especificação do Projeto". 
+
+Por exemplo:
  
+| **Caso de Teste** 	| **CT-001 – Possuir duas Telas** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-002 - A aplicação deverá cadastrar dois tipos de usuários, o contratatante e o contratado	 |
+| Objetivo do Teste 	| Verificar se a existe opção para contratante e contratado na aplicação. |
+| Passos 	| - Acessar o App <br> - Clica na opção Trabalhar |
+|Critério de Êxito | -  Redirecionar para tela de Login |
+
+
+| **Caso de Teste** 	| **CT-002 – Tela de  Cadastro** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-012 - RF-012	A aplicação deverá permitir que os usuários façam o login e cadastro |
+| Objetivo do Teste 	| Verificar se a existe é possivel Logar na aplicação. |
+| Passos 	| - Acessar o App <br> - Clica na opção Trabalhar e Clicar na opçâo cadastre-se,<br> preencher todos os campos obrigatórios (e-mail e senha) - Clicar em "Entrar" |
+|Critério de Êxito |  - Redirecionar para tela de busca de vagas |
+
+| **Caso de Teste** 	| **CT-003 – Tela de  Login** 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-012 - RF-012	A aplicação deverá permitir que os usuários façam o login e cadastro |
+| Objetivo do Teste 	| Verificar se a existe é possivel seCadastrar na aplicação. |
+| Passos 	| - Acessar o App <br> - Clica na opção Trabalhar e preencher os campos obrigatórios (nome, sobrenome, e-mail, senha e confirmação de senha) - Clicar em "Cadastrar" |
+|Critério de Êxito |  - Redirecionar para tela de busca de vagas |
+
+
 ## Ferramentas de Testes (Opcional)
 
 Comente sobre as ferramentas de testes utilizadas.
