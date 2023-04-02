@@ -1,8 +1,26 @@
 import EyeIcon from "../../assets/eyeicon";
+import LockerIcon from "../../assets/locker";
+import MailIcon from "../../assets/mail";
+
 import BackgroundImage from "../../components/BackgroundImage";
-import { ContainerForm, Fields } from "../../components/FormStyles/FormStyles";
+import {
+	Box,
+	BoxInput,
+	ContainerForm,
+	FieldBox,
+	Fields,
+	Input,
+} from "../../components/FormStyles/FormStyles";
 import Slogan from "../../components/Slogan";
-import { Button, Container, LoginTitle, TextButton } from "./styles";
+import {
+	BoxIcon,
+	Button,
+	Container,
+	LoginTitle,
+	SignUpLink,
+	SignUpText,
+	TextButton,
+} from "./styles";
 const Login = () => {
 	return (
 		<BackgroundImage>
@@ -10,17 +28,39 @@ const Login = () => {
 				<Slogan text="Seja bem-vindo de volta!" />
 				<LoginTitle> Faça login na sua conta </LoginTitle>
 				<ContainerForm>
-					<Fields placeholder="Email" />
-					<Fields
-						placeholder="Senha"
-						autoCorrect={false}
-						secureTextEntry={true}
-						textContentType="password"
-					/>
-					<EyeIcon />
+					<Fields>
+						<FieldBox>
+							<Box>
+								<MailIcon />
+							</Box>
+							<BoxInput>
+								<Input placeholder="Email" />
+							</BoxInput>
+						</FieldBox>
+						<FieldBox>
+							<Box>
+								<LockerIcon />
+							</Box>
+							<BoxInput>
+								<Input
+									placeholder="Senha"
+									autoCorrect={false}
+									secureTextEntry={true}
+									textContentType="password"
+								/>
+								<BoxIcon>
+									<EyeIcon />
+								</BoxIcon>
+							</BoxInput>
+						</FieldBox>
+					</Fields>
 					<Button>
 						<TextButton>Entrar</TextButton>
 					</Button>
+					<SignUpText>
+						<SignUpText>Novo Aqui?</SignUpText>{" "}
+						<SignUpLink>Cadastre-se</SignUpLink>
+					</SignUpText>
 				</ContainerForm>
 			</Container>
 		</BackgroundImage>

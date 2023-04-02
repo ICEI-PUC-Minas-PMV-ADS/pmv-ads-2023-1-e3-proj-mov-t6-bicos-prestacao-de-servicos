@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
 export const ContainerForm = styled.View`
 	margin: 15px;
@@ -15,15 +15,33 @@ export const Fields = styled.View`
 	padding: 0 40px;
 	gap: 10px;
 `;
+export const FieldBox = styled.View`
+	display: flex;
+	flex-direction: row;
+	margin: 10px;
+`;
+export const Box = styled.View`
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	background-color: #fff;
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+	border: 1px solid #e6e6e6;
+`;
 
-export const Input = styled.TextInput`
-	display: block;
-	box-sizing: border-box;
+export const BoxInput = styled.View`
+	display: flex;
+	flex-direction: row;
 	max-width: 600px;
 	width: 100%;
-	padding: 20px 10px;
-	border-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+
 	border: 1px solid #e6e6e6;
 	background-color: #fff;
-	text-align: left;
+`;
+export const Input = styled.TextInput`
+	width: 100%;
+	padding: 15px;
 `;
