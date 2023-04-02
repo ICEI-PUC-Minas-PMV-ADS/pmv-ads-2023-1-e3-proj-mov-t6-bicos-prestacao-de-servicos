@@ -1,19 +1,9 @@
 import { useNavigation } from "@react-navigation/native";
 import { useCallback } from "react";
-import HireBirds from "../../assets/hireBirds";
-import WorkBirds from "../../assets/workBirds";
 import BackgroundImage from "../../components/BackgroundImage";
+import BirdsButton from "../../components/BirdsButton";
 import Slogan from "../../components/Slogan";
-import {
-	BirdImageContent,
-	Button,
-	Container,
-	ContainerButton,
-	HireContent,
-	QuestionText,
-	Text,
-	WorkContent,
-} from "./styles";
+import { Container, ContainerButton, QuestionText } from "./styles";
 
 const PerfilChoose = () => {
 	const navigation = useNavigation();
@@ -28,23 +18,9 @@ const PerfilChoose = () => {
 				<QuestionText>O que você busca?</QuestionText>
 
 				<ContainerButton>
-					<WorkContent>
-						<BirdImageContent>
-							<WorkBirds />
-						</BirdImageContent>
-						<Button onPress={handleToLogin}>
-							<Text>Trabalhar</Text>
-						</Button>
-					</WorkContent>
+					<BirdsButton title="Trabalhar" pressOn={handleToLogin} />
 
-					<HireContent>
-						<BirdImageContent>
-							<HireBirds />
-						</BirdImageContent>
-						<Button>
-							<Text>Contratar</Text>
-						</Button>
-					</HireContent>
+					<BirdsButton title="Contratar" contractButton={true} />
 				</ContainerButton>
 			</Container>
 		</BackgroundImage>

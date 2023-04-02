@@ -16,36 +16,11 @@ export const QuestionText = styled.Text`
 `;
 
 export const ContainerButton = styled.View`
-	width: 35%;
-	margin-top: 200px;
-	margin-left: 100px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-`;
-
-export const BirdImageContent = styled.View`
+	padding-top: 60;
 	display: flex;
 	flex-direction: row;
 	width: 100%;
 	align-items: center;
 	justify-content: space-evenly;
-	align-items: flex-end;
+	border-radius: 20;
 `;
-
-export const Button = styled.TouchableOpacity`
-	border-radius: 10;
-	background-color: #fe7216;
-`;
-
-export const Text = styled.Text`
-	padding: 10px;
-	text-align: center;
-	font-size: 15px;
-	font-family: DMSans_700Bold;
-	color: white;
-`;
-
-export const WorkContent = styled.View``;
-
-export const HireContent = styled.View``;
