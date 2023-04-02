@@ -11,7 +11,7 @@ https://www.figma.com/file/H1LvDAe39TLO9qtRYDHXs0/BICOS---SERVI%C3%87OS?node-id=
 Relacionando o desenvolvimento feito aos requisitos do sistema, até o momento contempla-se os requisitos:
 <pre>
 | RF-001 | A aplicação deverá possuir uma apresentação breve do aplicativo | <br />
-| RF-002 | A aplicação deverá cadastrar dois tipos de usuários, o contratatante e o contratado |
+| RF-002 | A aplicação deverá permitir o cadastro de dois tipos de usuários, o trabalhador em "Trabalhar" e o contratante em "Contratar" |
 </pre>
 Esses requisitos foram alcançados pelo desenvolvimento da tela de login / registro da aplicação e a tela inicial.
 Temos lá a descrição breve e também a distinção do usuário contratante e contratado. 
