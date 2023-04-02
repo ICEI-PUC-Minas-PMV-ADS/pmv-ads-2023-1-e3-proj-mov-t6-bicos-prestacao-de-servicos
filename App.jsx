@@ -1,25 +1,25 @@
-import {
-	DMSans_400Regular,
-	DMSans_500Medium,
-	DMSans_700Bold,
-	useFonts,
-} from "@expo-google-fonts/dm-sans";
-
-import { Roboto_100Thin, Roboto_300Light } from "@expo-google-fonts/roboto";
+import React, { useState, useEffect } from "react";
+import * as SplashScreen from "expo-splash-screen";
 import AppLoading from "expo-app-loading";
 import { Routes } from "./src/routes";
 
-const App = () => {
-	const { fontsLoaded } = useFonts({
-		Roboto_100Thin,
-		Roboto_300Light,
-		DMSans_400Regular,
-		DMSans_500Medium,
-		DMSans_700Bold,
-	});
+import useFonts from "./src/hooks/useFonts";
 
-	if (!fontsLoaded) {
-		<AppLoading />;
+const App = () => {
+	const [IsReady, SetIsReady] = useState(false);
+
+	const LoadFontsAndRestoreToken = async () => {
+		await useFonts();
+	};
+
+	if (!IsReady) {
+		return (
+			<AppLoading
+				startAsync={LoadFontsAndRestoreToken}
+				onFinish={() => SetIsReady(true)}
+				onError={() => {}}
+			/>
+		);
 	}
 
 	return <Routes />;

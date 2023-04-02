@@ -1,8 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
 import { useCallback } from "react";
+import { Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
+import IdIcon from "../../assets/id";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
+
 import BackgroundImage from "../../components/BackgroundImage";
 import {
 	Box,
@@ -13,31 +16,46 @@ import {
 	Input,
 } from "../../components/FormStyles/FormStyles";
 import Slogan from "../../components/Slogan";
-
 import {
 	BoxIcon,
 	Button,
 	Container,
 	LoginText,
 	LoginTitle,
-	SignUpDescription,
 	SignUpLink,
 	SignUpText,
 	TextButton,
 } from "./styles";
-const Login = () => {
+
+const SignUp = () => {
 	const navigation = useNavigation();
 	const handleToLogin = useCallback(() => {
-		navigation.navigate("SignUp");
+		navigation.navigate("Login");
 	}, []);
 
 	return (
 		<BackgroundImage>
 			<Container>
 				<Slogan text="Seja bem-vindo de volta!" />
-				<LoginTitle> Faça login na sua conta </LoginTitle>
+				<LoginTitle>Cadastre-se e aproveite os serviços da Bicos </LoginTitle>
 				<ContainerForm>
 					<Fields>
+						<FieldBox>
+							<Box>
+								<IdIcon />
+							</Box>
+							<BoxInput>
+								<Input placeholder="Nome" />
+							</BoxInput>
+						</FieldBox>
+						<FieldBox>
+							<Box>
+								<IdIcon />
+							</Box>
+							<BoxInput>
+								<Input placeholder="Sobrenome" />
+							</BoxInput>
+						</FieldBox>
 						<FieldBox>
 							<Box>
 								<MailIcon />
@@ -62,19 +80,37 @@ const Login = () => {
 								</BoxIcon>
 							</BoxInput>
 						</FieldBox>
+						<FieldBox>
+							<Box>
+								<LockerIcon />
+							</Box>
+							<BoxInput>
+								<Input
+									placeholder="Confirme a Senha"
+									autoCorrect={false}
+									secureTextEntry={true}
+									textContentType="password"
+								/>
+								<BoxIcon>
+									<EyeIcon />
+								</BoxIcon>
+							</BoxInput>
+						</FieldBox>
 					</Fields>
 					<LoginText>Esqueceu a senha?</LoginText>
 					<Button>
-						<TextButton>Entrar</TextButton>
+						<TextButton>Cadastrar</TextButton>
 					</Button>
-					<SignUpDescription>
-						<SignUpText>Novo Aqui?</SignUpText>
-						<SignUpLink onPress={handleToLogin}>Cadastre-se</SignUpLink>
-					</SignUpDescription>
+					<SignUpText>
+						<SignUpText>Já é cadastrado?</SignUpText>
+						<Pressable onPress={handleToLogin}>
+							<SignUpLink>Entre</SignUpLink>
+						</Pressable>
+					</SignUpText>
 				</ContainerForm>
 			</Container>
 		</BackgroundImage>
 	);
 };
 
-export default Login;
+export default SignUp;
