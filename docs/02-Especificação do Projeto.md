@@ -80,7 +80,11 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
 
 
 ![Indicadores de Desempenho](https://raw.githubusercontent.com/gisellenrosa/BicosMobile/b36f12fd12cfcbefb7ef76a91d7ed6fba8820e96/docs/img/indicadores%20de%20desempenho.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+ 
+ ## Dashboard
+ 
+![Dashboard](img/dashboard teste.png)
+
 
 ## Requisitos
 
