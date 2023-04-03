@@ -83,7 +83,8 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
  
  ## Dashboard
  
-![Dashboard](img/dashboard teste.png)
+![dashboard teste](https://user-images.githubusercontent.com/105250541/229388303-553e9d5e-b444-4cf3-9630-d5318c1b506f.png)
+
 
 
 ## Requisitos
