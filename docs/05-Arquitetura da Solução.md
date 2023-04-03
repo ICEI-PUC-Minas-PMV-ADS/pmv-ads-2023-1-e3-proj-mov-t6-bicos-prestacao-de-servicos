@@ -29,11 +29,9 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ## BPMN
 
-BPMN - Modelo e Notação de Processos de Negócio
+BPMN - O objetivo do BPMN é facilitar a comunicação e a compreensão dos processos de negócio entre diferentes pessoas e departamentos em uma organização.
 
 ![UML](img/fluxo.png)
-
-O objetivo do BPMN é facilitar a comunicação e a compreensão dos processos de negócio entre diferentes pessoas e departamentos em uma organização.
 
 ## Modelo Físico
 
