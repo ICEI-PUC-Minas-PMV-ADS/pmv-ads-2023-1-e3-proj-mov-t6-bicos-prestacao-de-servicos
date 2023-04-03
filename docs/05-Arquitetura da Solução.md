@@ -29,7 +29,7 @@ O Esquema Relacional corresponde à representação dos dados em tabelas juntame
 
 ## BPMN
 
-BPMN - O objetivo do BPMN é facilitar a comunicação e a compreensão dos processos de negócio entre diferentes pessoas e departamentos em uma organização.
+O objetivo do BPMN é facilitar a comunicação e a compreensão dos processos de negócio entre diferentes pessoas e departamentos em uma organização.
 
 ![UML](img/fluxo.png)
 
