@@ -6,7 +6,7 @@
 
 `3º semestre`
 
-  <img src="https://user-images.githubusercontent.com/55036173/229002162-1a7c423b-858c-49f2-b6cb-56cb3ef46541.jpeg"  width="200"/>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/blob/main/docs/img/icon%201.png?raw=true"  width="200"/>
 
 Bicos é uma aplicação de prestação de serviçcos que pretende facilitar a busca por empregos de diversos tipos de contrato. Muitas pessoas estão com objetivos a longo prazo de conseguirem a independência financeira, e muitas delas procuram empregos temporários como renda extra, bicos é uma app que busca conectar as pessoas com seus objetivos profissionais de curto, médio até mesmo a longo prazo. Com o aplicativo Bicos é possível cadastrar o seu perfil e se inscrever em vagas disponiveis.
 
