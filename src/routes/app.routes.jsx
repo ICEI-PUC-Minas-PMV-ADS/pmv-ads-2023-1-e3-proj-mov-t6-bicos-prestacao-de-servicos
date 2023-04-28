@@ -3,6 +3,7 @@ import Login from "../pages/Login";
 import PerfilChoose from "../pages/PerfilChoose";
 import SignUp from "../pages/SignUp";
 import Home from "../pages/Home";
+import { ServicePage } from "../pages/servicesPage";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -17,6 +18,7 @@ export function AppRoutes() {
 			<Screen name="Login" component={Login} />
 			<Screen name="SignUp" component={SignUp} />
 			<Screen name="Home" component={Home} />
+			<Screen name="ServicePage" component={ServicePage} />
 		</Navigator>
 	);
 }

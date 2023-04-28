@@ -11,6 +11,12 @@ const PerfilChoose = () => {
 		navigation.navigate("Login");
 	}, []);
 
+	const handleToService = useCallback(() => {
+		navigation.navigate("ServicePage");
+	})
+
+
+
 	return (
 		<BackgroundImage>
 			<Container>
@@ -19,7 +25,7 @@ const PerfilChoose = () => {
 
 				<ContainerButton>
 					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
-
+					<BirdsButton title="Home" onPress={handleToService}/>
 					<BirdsButton title="Contratar" contractButton={true} />
 				</ContainerButton>
 			</Container>
