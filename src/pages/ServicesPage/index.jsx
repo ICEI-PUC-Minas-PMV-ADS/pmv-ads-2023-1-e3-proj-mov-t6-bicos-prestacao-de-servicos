@@ -45,16 +45,26 @@ const style = StyleSheet.create({
     width: '100%',
     height: "100%",
     display: 'flex',
+    gap: 20,
     flexDirection: "column",
     alignItems: 'center',
     justifyContent: 'flex-start',
-    marginTop: 25,
+    
+    paddingTop: 20,
+    paddingBottom: 25,
 
     backgroundColor: "#d8d8d8"
   },
 
   section_1: {
-    backgroundColor: "#fff"
+    display: "flex",
+    alignContent: "center",
+    justifyContent: "center",
+    flexDirection: "column",
+    backgroundColor: "#fff",
+    marginTop: 30,
+    borderRadius: 10,
+    width: "80%"
   },
 
   titleService: {

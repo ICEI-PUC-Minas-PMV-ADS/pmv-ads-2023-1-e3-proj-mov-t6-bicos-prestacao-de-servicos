@@ -25,7 +25,7 @@ const PerfilChoose = () => {
 
 				<ContainerButton>
 					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
-					<BirdsButton title="Home" onPress={handleToService}/>
+					{/* <BirdsButton title="Home" onPress={handleToService}/> */}
 					<BirdsButton title="Contratar" contractButton={true} />
 				</ContainerButton>
 			</Container>
