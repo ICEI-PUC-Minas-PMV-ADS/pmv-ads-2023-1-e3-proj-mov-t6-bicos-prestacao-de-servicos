@@ -3,7 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.Pressable`
     width: 16%;
     height: 50px;
-
+    margin-bottom: 4%;
 `;
 
 export const Content = styled.View`

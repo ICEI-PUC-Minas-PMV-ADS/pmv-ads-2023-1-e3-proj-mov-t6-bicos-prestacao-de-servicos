@@ -11,6 +11,7 @@ CREATE TABLE `usuarios` (
   UNIQUE KEY `telefone_UN` (`telefone`)
 );
 
+
 CREATE TABLE `trabalhadores` (
   `id` int NOT NULL AUTO_INCREMENT,
   `user_id` int NOT NULL,
@@ -26,6 +27,7 @@ CREATE TABLE `trabalhadores` (
   KEY `FK_userId` (`user_id`),
   CONSTRAINT `FK_userId` FOREIGN KEY (`user_id`) REFERENCES `usuarios` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 );
+
 
 CREATE TABLE `contratantes` (
   `id` int NOT NULL AUTO_INCREMENT,
@@ -73,7 +75,6 @@ CREATE TABLE `contratacao` (
   CONSTRAINT `FK_servicoId` FOREIGN KEY (`servico_id`) REFERENCES `servicos` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
   CONSTRAINT `FK_trabalhadorId` FOREIGN KEY (`trabalhador_id`) REFERENCES `trabalhadores` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
 );
-
 
 
 CREATE TABLE `avaliacoes` (

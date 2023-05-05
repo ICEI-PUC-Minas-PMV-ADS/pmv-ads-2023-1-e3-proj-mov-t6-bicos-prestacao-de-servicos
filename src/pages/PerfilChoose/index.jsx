@@ -12,7 +12,7 @@ const PerfilChoose = () => {
 	}, []);
 
 	return (
-		<BackgroundImage>
+		<BackgroundImage imagePath={"../../assets/backgroundOrange.png"}>
 			<Container>
 				<Slogan text="A melhor plataforma para prestação e contratação de serviços" />
 				<QuestionText>O que você busca?</QuestionText>
