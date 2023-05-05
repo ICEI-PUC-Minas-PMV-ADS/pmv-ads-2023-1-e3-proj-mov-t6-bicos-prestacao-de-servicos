@@ -1,4 +1,5 @@
-import { Image, Text, View, StyleSheet, ScrollView } from "react-native";
+import { Image, Text, View, StyleSheet, ScrollView, TouchableOpacity } from "react-native";
+import { Ionicons } from '@expo/vector-icons';
 import Obra from "../../assets/obra.jpg";
 
 import { Entypo } from "@expo/vector-icons";
@@ -6,11 +7,21 @@ import { FontAwesome5 } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
 import Categories from "./categories";
 import { MaterialIcons } from "@expo/vector-icons";
+import { useNavigation } from "@react-navigation/native";
+import { useCallback } from "react";
 
 function ServicePage() {
+  const navigation = useNavigation();
+  const handleToHome = useCallback(() => {
+    navigation.navigate("Login");
+  })
+
   return (
     <ScrollView>
       <View style={style.container}>
+        <TouchableOpacity style={style.buttonBack} onPress={handleToHome}>
+          <Ionicons name="arrow-back" size={24} color="black" />
+        </TouchableOpacity>
         {/* SECTION TITLE + IMAGE */}
         <View style={style.section_1}>
           <View style={style.flexTitle}>
@@ -77,6 +88,19 @@ export const style = StyleSheet.create({
     flexGrow: 1,
     overflow: "scroll",
   },
+  buttonBack: {
+    position: "absolute",
+    top: 25,
+    left: 20,
+    height: "auto",
+    width: "auto",
+    padding: 5,
+    borderRadius: 50,
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: "#fff",
+  },
   flexTitle: {
     display: "flex",
     flexDirection: "row",
@@ -89,7 +113,7 @@ export const style = StyleSheet.create({
     justifyContent: "center",
     flexDirection: "column",
     backgroundColor: "#fff",
-    marginTop: 30,
+    marginTop: 45,
     marginHorizontal: 20,
     borderRadius: 10,
     width: "80%",
