@@ -44,18 +44,14 @@ export const SearchArea = styled.View`
 `
 
 export const SkillCardArea = styled.View`
-	margin-top: 8%;
+	margin-top: 5%;
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
 `
 
-export const JobsArea = styled.View`
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	align-items: center;
+export const JobsArea = styled.ScrollView`
 `
 
 

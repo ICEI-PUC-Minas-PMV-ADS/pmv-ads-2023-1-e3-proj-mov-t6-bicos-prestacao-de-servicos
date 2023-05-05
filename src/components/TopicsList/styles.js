@@ -3,8 +3,7 @@ import styled from "styled-components/native";
 export const Container = styled.View`
     display: flex;
     flex-direction: row;
-    margin-top: 7%;
-    justify-content: space-between;
+    justify-content: space-around;
 `;
 
 export const TopicText = styled.Text`
@@ -15,6 +14,8 @@ export const TopicText = styled.Text`
 
 export const TopicContent = styled.Pressable`
     align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
 `
 export const TopicTextSelected = styled.Text`
     font-family: DMSans_400Regular;

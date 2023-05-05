@@ -1,5 +1,9 @@
 import React, { useState } from "react";
 
+import CompassIcon from "../../assets/compassIcon"
+import HouseIcon from "../../assets/houseIcon"
+import PersonIcon from "../../assets/personIcon"
+
 import {
     Container,
     TopicText,
@@ -10,11 +14,24 @@ import {
 
 const TopicsList = (props) => {
 
-    const [isSelected, setIsSelected] = useState(props.topics.length - 1);
+    const [isSelected, setIsSelected] = useState(props.startSelection);
 
     function filterSelection(topic) {
         if(topic.key != isSelected) {
             setIsSelected(topic.key)
+        }
+    }
+
+    function iconValidator(iconName) {
+        switch(iconName) {
+            case "Home":
+                return <HouseIcon />
+                break;
+            case "Explorar":
+                return <CompassIcon />
+                break;
+            default: 
+                return <PersonIcon />
         }
     }
 
@@ -45,9 +62,14 @@ const TopicsList = (props) => {
                             key={topic.key}
                             onPress={() => filterSelection(topic)}
                         >
+                            {
+                                topic.isIcon ? iconValidator(topic.text) :
+
                                 <TopicText>
                                     {topic.text}
                                 </TopicText>
+                            }
+
                         </TopicContent>
                     }
                 })
