@@ -1,5 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
-import { useCallback } from "react";
+import axios from "axios";
+import { useCallback, useState } from "react";
 import { Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import IdIcon from "../../assets/id";
@@ -17,6 +18,7 @@ import {
 import Slogan from "../../components/Slogan";
 import {
 	BoxIcon,
+	Button,
 	Container,
 	SignUpDescription,
 	SignUpLink,
@@ -116,9 +118,9 @@ const Sign = () => {
 							</BoxInput>
 						</FieldBox>
 					</Fields>
-					<Pressable onPress={handleSign}>
+					<Button onPress={handleSign}>
 						<TextButton>Cadastrar</TextButton>
-					</Pressable>
+					</Button>
 					<SignUpDescription>
 						<SignUpText>Já é cadastrado?</SignUpText>
 						<Pressable onPress={handleToSignUp}>
