@@ -1,18 +1,11 @@
 {
 	"users": [
 		{
-			"id": 1,
-			"email": "exemple@gmail.com",
-			"name": "typicode",
-			"lastName": "Rosae",
-			"password": "123456"
-		}
-	],
-	"login": [
-		{
-			"id": 1,
-			"email": "teste@gmail.com.br",
-			"password": "123456"
+			"email": "xlrosa@gmail.com",
+			"password": "$2a$10$TNUucuBN1Zk6cY7o0dsE9OFHVscs4luhdpbcI68hAypVAa8w39VDu",
+			"name": "xl",
+			"lastName": "rosa",
+			"id": 2
 		}
 	]
 }
