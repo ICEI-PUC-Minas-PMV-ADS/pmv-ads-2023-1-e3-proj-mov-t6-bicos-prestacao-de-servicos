@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "json-server",
+      "name": "typicode"
+    },
+    {
+      "nome": "teste",
+      "email": "teste@gmail.com",
+      "id": 2
+    },
+    {
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
