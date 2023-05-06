@@ -50,7 +50,6 @@ const Login = () => {
 		axios
 			.post("http://10.0.2.2:3000/login", body)
 			.then((res) => {
-				console.log("to caindo aqui");
 				handleToHome();
 			})
 			.catch((err) => {
@@ -70,7 +69,7 @@ const Login = () => {
 								<MailIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Email" onChange={setEmail} />
+								<Input placeholder="Email" onChangeText={setEmail} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -83,7 +82,7 @@ const Login = () => {
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
-									onChange={setPassword}
+									onChangeText={setPassword}
 								/>
 								<BoxIcon>
 									<EyeIcon />

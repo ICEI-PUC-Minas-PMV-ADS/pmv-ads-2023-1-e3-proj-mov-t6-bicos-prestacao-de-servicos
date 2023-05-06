@@ -63,7 +63,7 @@ const Sign = () => {
 								<IdIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Nome" onChange={setName} />
+								<Input placeholder="Nome" onChangeText={setName} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -71,7 +71,7 @@ const Sign = () => {
 								<IdIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Sobrenome" onChange={setLastName} />
+								<Input placeholder="Sobrenome" onChangeText={setLastName} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -79,7 +79,7 @@ const Sign = () => {
 								<MailIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Email" onChange={setEmail} />
+								<Input placeholder="Email" onChangeText={setEmail} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -92,7 +92,7 @@ const Sign = () => {
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
-									onChange={setPassword}
+									onChangeText={setPassword}
 								/>
 								<BoxIcon>
 									<EyeIcon />
