@@ -51,21 +51,20 @@ export const LoginText = styled.Text`
 	text-align: right;
 	font-family: DMSans_400Regular;
 `;
-export const LoginDescription = styled.Text`
+export const SignUpText = styled.Text`
 	color: #777;
 	font-size: 15px;
-	text-align: center;
 	font-family: DMSans_400Regular;
 `;
-
-export const SignUpLink = styled.Pressable`
+export const SignUpDescription = styled.View`
 	display: flex;
-	align-items: center;
+	flex-direction: row;
+	justify-content: center;
+	gap: 5px;
+	margin-bottom: 15px;
 `;
-
-export const SignUpBoldText = styled.Text`
+export const SignUpLink = styled.Text`
 	color: black;
 	font-size: 15px;
-	text-align: center;
 	font-family: DMSans_700Bold;
 `;
