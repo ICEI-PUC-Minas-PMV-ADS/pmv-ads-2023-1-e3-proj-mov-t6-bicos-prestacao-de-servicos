@@ -1,5 +1,6 @@
 import { useNavigation } from "@react-navigation/native";
 import { useCallback } from "react";
+import { Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
@@ -28,7 +29,7 @@ import {
 const Login = () => {
 	const navigation = useNavigation();
 	const handleToSignUp = useCallback(() => {
-		navigation.navigate("SignUp");
+		navigation.navigate("Sign");
 	}, []);
 
 	return (
@@ -69,7 +70,9 @@ const Login = () => {
 					</Button>
 					<SignUpDescription>
 						<SignUpText>Novo Aqui?</SignUpText>
-						<SignUpLink onPress={handleToSignUp}>Cadastre-se</SignUpLink>
+						<Pressable onPress={handleToSignUp}>
+							<SignUpLink>Cadastre-se</SignUpLink>
+						</Pressable>
 					</SignUpDescription>
 				</ContainerForm>
 			</Container>

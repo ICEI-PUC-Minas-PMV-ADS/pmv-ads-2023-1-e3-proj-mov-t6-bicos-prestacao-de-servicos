@@ -5,7 +5,6 @@ import EyeIcon from "../../assets/eyeicon";
 import IdIcon from "../../assets/id";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
-
 import BackgroundImage from "../../components/BackgroundImage";
 import {
 	Box,
@@ -20,14 +19,15 @@ import {
 	BoxIcon,
 	Button,
 	Container,
+	SignUpDescription,
 	SignUpLink,
 	SignUpText,
 	TextButton,
 } from "./styles";
 
-const SignUp = () => {
+const Sign = () => {
 	const navigation = useNavigation();
-	const handleToLogin = useCallback(() => {
+	const handleToSignUp = useCallback(() => {
 		navigation.navigate("Login");
 	}, []);
 
@@ -83,7 +83,7 @@ const SignUp = () => {
 							</Box>
 							<BoxInput>
 								<Input
-									placeholder="Confirme a Senha"
+									placeholder="Senha"
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
@@ -97,16 +97,16 @@ const SignUp = () => {
 					<Button>
 						<TextButton>Cadastrar</TextButton>
 					</Button>
-					<SignUpText>
+					<SignUpDescription>
 						<SignUpText>Já é cadastrado?</SignUpText>
-						<Pressable onPress={handleToLogin}>
+						<Pressable onPress={handleToSignUp}>
 							<SignUpLink>Entre</SignUpLink>
 						</Pressable>
-					</SignUpText>
+					</SignUpDescription>
 				</ContainerForm>
 			</Container>
 		</BackgroundImage>
 	);
 };
 
-export default SignUp;
+export default Sign;
