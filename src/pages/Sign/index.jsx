@@ -50,7 +50,7 @@ const Sign = () => {
 			.catch((err) => {
 				console.log(JSON.stringify(err));
 			});
-	}, []);
+	}, [name, lastName, email, password]);
 
 	return (
 		<BackgroundImage>

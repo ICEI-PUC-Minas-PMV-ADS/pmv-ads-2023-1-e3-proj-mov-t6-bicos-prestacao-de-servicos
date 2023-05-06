@@ -55,7 +55,7 @@ const Login = () => {
 			.catch((err) => {
 				console.log(JSON.stringify(err));
 			});
-	}, []);
+	}, [email, password]);
 
 	return (
 		<BackgroundImage>
