@@ -28,8 +28,10 @@ import {
 	TextButton,
 } from "./styles";
 
-
 const Login = () => {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
 	const navigation = useNavigation();
 	const handleToSignUp = useCallback(() => {
 		navigation.navigate("Sign");
@@ -37,6 +39,22 @@ const Login = () => {
 
 	const handleToHome = useCallback(() => {
 		navigation.navigate("Home");
+	}, []);
+
+	const handleLogin = useCallback(() => {
+		const body = {
+			email,
+			password,
+		};
+
+		axios
+			.post("https://localhost:3000/login", body)
+			.then((res) => {
+				handleToHome();
+			})
+			.catch((err) => {
+				alert("Erro: Usuário não encontrado");
+			});
 	}, []);
 
 	return (
@@ -51,7 +69,7 @@ const Login = () => {
 								<MailIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Email" />
+								<Input placeholder="Email" onChange={setEmail} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -64,6 +82,7 @@ const Login = () => {
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
+									onChange={setPassword}
 								/>
 								<BoxIcon>
 									<EyeIcon />
@@ -72,12 +91,8 @@ const Login = () => {
 						</FieldBox>
 					</Fields>
 					<LoginText>Esqueceu a senha?</LoginText>
-					<Button onPress={handleToHome}>
-						<TextButton
-							
-						>
-							Entrar
-						</TextButton>
+					<Button onPress={handleLogin}>
+						<TextButton>Entrar</TextButton>
 					</Button>
 					<SignUpDescription>
 						<SignUpText>Novo Aqui?</SignUpText>
