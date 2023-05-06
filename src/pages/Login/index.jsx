@@ -1,12 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
-import { useCallback } from "react";
+import axios from "axios";
+import { useCallback, useState } from "react";
 import { Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
 import BackgroundImage from "../../components/BackgroundImage";
-import Slogan from "../../components/Slogan";
-
 import {
 	Box,
 	BoxInput,
@@ -15,6 +14,7 @@ import {
 	Fields,
 	Input,
 } from "../../components/FormStyles/FormStyles";
+import Slogan from "../../components/Slogan";
 
 import {
 	BoxIcon,
@@ -43,17 +43,18 @@ const Login = () => {
 
 	const handleLogin = useCallback(() => {
 		const body = {
-			email,
-			password,
+			email: "agora foi",
+			password: "foisim",
 		};
 
 		axios
-			.post("https://localhost:3000/login", body)
+			.post("http://10.0.2.2:3000/login", body)
 			.then((res) => {
+				console.log("to caindo aqui");
 				handleToHome();
 			})
 			.catch((err) => {
-				alert("Erro: Usuário não encontrado");
+				console.log(JSON.stringify(err));
 			});
 	}, []);
 
