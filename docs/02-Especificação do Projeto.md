@@ -80,7 +80,12 @@ Apresente aqui os principais indicadores de desempenho e algumas metas para o pr
 
 
 ![Indicadores de Desempenho](https://raw.githubusercontent.com/gisellenrosa/BicosMobile/b36f12fd12cfcbefb7ef76a91d7ed6fba8820e96/docs/img/indicadores%20de%20desempenho.png)
-Obs.: todas as informações para gerar os indicadores devem estar no diagrama de classe a ser apresentado a posteriori. 
+ 
+ ## Dashboard
+ 
+![dashboard teste](https://user-images.githubusercontent.com/105250541/229388303-553e9d5e-b444-4cf3-9630-d5318c1b506f.png)
+
+
 
 ## Requisitos
 
@@ -88,10 +93,10 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-|ID    | Descrição do Requisito  | Prioridade |
-|------|-----------------------------------------|----|
+|ID     | Descrição do Requisito  | Prioridade |
+|-------|-----------------------------------------|-----|
 |RF-001| A aplicação deverá possuir uma apresentação breve do aplicativo | BAIXA |
-|RF-002| A aplicação deverá cadastrar dois tipos de usuários, o contratatante e o contratado | ALTA | 
+|RF-002| A aplicação deverá permitir o cadastro de dois tipos de usuários, o trabalhador em "Trabalhar" e o contratante em "Contratar" | ALTA | 
 |RF-003| A aplicação deverá permitir a edição do perfil desses usuários | ALTA | 
 |RF-004| A aplicação terá um perfil de usuário para o contratado com suas qualificações e preferências | ALTA | 
 |RF-005| A aplicação deverá permitir o contratante criar oportunidades de serviço | ALTA|

@@ -3,6 +3,7 @@ import { ImageBackground, SafeAreaView } from "react-native";
 import styles from "./styles";
 
 const BackgroundImage = ({ children }) => {
+
 	return (
 		<SafeAreaView>
 			<ImageBackground

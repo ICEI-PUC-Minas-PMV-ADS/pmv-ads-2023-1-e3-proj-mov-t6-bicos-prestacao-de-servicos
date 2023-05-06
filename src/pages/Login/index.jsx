@@ -5,6 +5,8 @@ import EyeIcon from "../../assets/eyeicon";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
 import BackgroundImage from "../../components/BackgroundImage";
+import Slogan from "../../components/Slogan";
+
 import {
 	Box,
 	BoxInput,
@@ -13,7 +15,6 @@ import {
 	Fields,
 	Input,
 } from "../../components/FormStyles/FormStyles";
-import Slogan from "../../components/Slogan";
 
 import {
 	BoxIcon,
@@ -26,10 +27,16 @@ import {
 	SignUpText,
 	TextButton,
 } from "./styles";
+
+
 const Login = () => {
 	const navigation = useNavigation();
 	const handleToSignUp = useCallback(() => {
 		navigation.navigate("Sign");
+	}, []);
+
+	const handleToHome = useCallback(() => {
+		navigation.navigate("Home");
 	}, []);
 
 	return (
@@ -65,8 +72,12 @@ const Login = () => {
 						</FieldBox>
 					</Fields>
 					<LoginText>Esqueceu a senha?</LoginText>
-					<Button>
-						<TextButton>Entrar</TextButton>
+					<Button onPress={handleToHome}>
+						<TextButton
+							
+						>
+							Entrar
+						</TextButton>
 					</Button>
 					<SignUpDescription>
 						<SignUpText>Novo Aqui?</SignUpText>

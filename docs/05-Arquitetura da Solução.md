@@ -8,7 +8,8 @@ Definição de como o software é estruturado em termos dos componentes que faze
 
 ## Diagrama de Classes
 
-O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de modelo para materializar os objetos que executarão na memória.
+O diagrama de classes ilustra graficamente como será a estrutura do software, e como cada uma das classes da sua estrutura estarão interligadas. Essas classes servem de 
+para materializar os objetos que executarão na memória.
 
 ![UML](img/uml.png)
 
@@ -22,9 +23,15 @@ O Modelo ER representa através de um diagrama como as entidades (coisas, objeto
 
 O Esquema Relacional corresponde à representação dos dados em tabelas juntamente com as restrições de integridade e chave primária.
  
-As referências abaixo irão auxiliá-lo na geração do artefato “Esquema Relacional”.
+![UML](img/relacional.jpg)
 
 > - [Criando um modelo relacional - Documentação da IBM](https://www.ibm.com/docs/pt-br/cognos-analytics/10.2.2?topic=designer-creating-relational-model)
+
+## BPMN
+
+O objetivo do BPMN é facilitar a comunicação e a compreensão dos processos de negócio entre diferentes pessoas e departamentos em uma organização.
+
+![UML](img/fluxo.png)
 
 ## Modelo Físico
 
