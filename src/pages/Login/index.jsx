@@ -43,8 +43,8 @@ const Login = () => {
 
 	const handleLogin = useCallback(() => {
 		const body = {
-			email: "agora foi",
-			password: "foisim",
+			email,
+			password,
 		};
 
 		axios
