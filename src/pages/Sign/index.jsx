@@ -17,7 +17,6 @@ import {
 import Slogan from "../../components/Slogan";
 import {
 	BoxIcon,
-	Button,
 	Container,
 	SignUpDescription,
 	SignUpLink,
@@ -30,6 +29,28 @@ const Sign = () => {
 	const handleToSignUp = useCallback(() => {
 		navigation.navigate("Login");
 	}, []);
+	const [name, setName] = useState("");
+	const [lastName, setLastName] = useState("");
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
+	const handleSign = useCallback(() => {
+		const body = {
+			name,
+			lastName,
+			email,
+			password,
+		};
+
+		axios
+			.post("http://10.0.2.2:3000/users", body)
+			.then((res) => {
+				handleToSignUp();
+			})
+			.catch((err) => {
+				console.log(JSON.stringify(err));
+			});
+	}, [name, lastName, email, password]);
 
 	return (
 		<BackgroundImage>
@@ -42,7 +63,7 @@ const Sign = () => {
 								<IdIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Nome" />
+								<Input placeholder="Nome" onChangeText={setName} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -50,7 +71,7 @@ const Sign = () => {
 								<IdIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Sobrenome" />
+								<Input placeholder="Sobrenome" onChangeText={setLastName} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -58,7 +79,7 @@ const Sign = () => {
 								<MailIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Email" />
+								<Input placeholder="Email" onChangeText={setEmail} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -71,6 +92,7 @@ const Sign = () => {
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
+									onChangeText={setPassword}
 								/>
 								<BoxIcon>
 									<EyeIcon />
@@ -94,9 +116,9 @@ const Sign = () => {
 							</BoxInput>
 						</FieldBox>
 					</Fields>
-					<Button>
+					<Pressable onPress={handleSign}>
 						<TextButton>Cadastrar</TextButton>
-					</Button>
+					</Pressable>
 					<SignUpDescription>
 						<SignUpText>Já é cadastrado?</SignUpText>
 						<Pressable onPress={handleToSignUp}>

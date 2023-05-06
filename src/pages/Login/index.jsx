@@ -1,12 +1,11 @@
 import { useNavigation } from "@react-navigation/native";
-import { useCallback } from "react";
+import axios from "axios";
+import { useCallback, useState } from "react";
 import { Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";
 import BackgroundImage from "../../components/BackgroundImage";
-import Slogan from "../../components/Slogan";
-
 import {
 	Box,
 	BoxInput,
@@ -15,6 +14,7 @@ import {
 	Fields,
 	Input,
 } from "../../components/FormStyles/FormStyles";
+import Slogan from "../../components/Slogan";
 
 import {
 	BoxIcon,
@@ -28,8 +28,10 @@ import {
 	TextButton,
 } from "./styles";
 
-
 const Login = () => {
+	const [email, setEmail] = useState("");
+	const [password, setPassword] = useState("");
+
 	const navigation = useNavigation();
 	const handleToSignUp = useCallback(() => {
 		navigation.navigate("Sign");
@@ -38,6 +40,22 @@ const Login = () => {
 	const handleToHome = useCallback(() => {
 		navigation.navigate("Home");
 	}, []);
+
+	const handleLogin = useCallback(() => {
+		const body = {
+			email,
+			password,
+		};
+
+		axios
+			.post("http://10.0.2.2:3000/login", body)
+			.then((res) => {
+				handleToHome();
+			})
+			.catch((err) => {
+				console.log(JSON.stringify(err));
+			});
+	}, [email, password]);
 
 	return (
 		<BackgroundImage>
@@ -51,7 +69,7 @@ const Login = () => {
 								<MailIcon />
 							</Box>
 							<BoxInput>
-								<Input placeholder="Email" />
+								<Input placeholder="Email" onChangeText={setEmail} />
 							</BoxInput>
 						</FieldBox>
 						<FieldBox>
@@ -64,6 +82,7 @@ const Login = () => {
 									autoCorrect={false}
 									secureTextEntry={true}
 									textContentType="password"
+									onChangeText={setPassword}
 								/>
 								<BoxIcon>
 									<EyeIcon />
@@ -72,12 +91,8 @@ const Login = () => {
 						</FieldBox>
 					</Fields>
 					<LoginText>Esqueceu a senha?</LoginText>
-					<Button onPress={handleToHome}>
-						<TextButton
-							
-						>
-							Entrar
-						</TextButton>
+					<Button onPress={handleLogin}>
+						<TextButton>Entrar</TextButton>
 					</Button>
 					<SignUpDescription>
 						<SignUpText>Novo Aqui?</SignUpText>
