@@ -4,6 +4,8 @@ import PerfilChoose from "../pages/PerfilChoose";
 import Sign from "../pages/Sign";
 import Home from "../pages/Home";
 import ServicePage from "../pages/ServicesPage";
+import ServicesExplorer from "../pages/ServicesExplorer";
+import SkillExplorer from "../pages/ServicesExplorer/SkillExplorer";
 const { Navigator, Screen } = createNativeStackNavigator();
 
 export function AppRoutes() {
@@ -18,6 +20,8 @@ export function AppRoutes() {
 			<Screen name="Sign" component={Sign} />
 			<Screen name="Home" component={Home} />
 			<Screen name="ServicesPage" component={ServicePage} />
+			<Screen name="ServicesExplorer" component={ServicesExplorer} />
+			<Screen name="SkillExplorer" component={SkillExplorer} />
 		</Navigator>
 	);
 }
