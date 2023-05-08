@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.Pressable`
     height: 25px;
     width: 71px;
     border-radius: 10px;
