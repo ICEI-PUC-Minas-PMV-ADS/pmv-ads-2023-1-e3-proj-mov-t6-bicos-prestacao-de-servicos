@@ -47,17 +47,16 @@ const Login = () => {
 			password,
 		};
 
-		handleToHome();
 
-		// axios
-		// 	.post("http://10.0.2.2:3000/login", body)
-		// 	.then((res) => {
-		// 		handleToHome();
-		// 	})
-		// 	.catch((err) => {
-		// 		Alert.alert("Usuário ou senha incorretos.");
-		// 		console.log(JSON.stringify(err));
-		// 	});
+		 axios
+		 	.post("http://10.0.2.2:3000/login", body)
+		 	.then((res) => {
+		 		handleToHome();
+		 	})
+		 	.catch((err) => {
+		 		Alert.alert("Usuário ou senha incorretos.");
+		 		console.log(JSON.stringify(err));
+		 	});
 	}, [email, password]);
 
 	return (

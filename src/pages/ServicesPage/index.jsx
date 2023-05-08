@@ -15,7 +15,7 @@ import { MaterialIcons } from "@expo/vector-icons";
 
 function ServicePage() {
 
-  const { endpoint, text } = route.params.setData;
+ // const { endpoint, text } = route.params.setData;
 
   const navigation = useNavigation();
 
