@@ -29,6 +29,10 @@ const TopicsList = (props) => {
 		navigation.navigate("Home");
 	}, []);
 
+    const handleToPerfil = useCallback(() => {
+		navigation.navigate("PerfilPage");
+	}, []);
+
     //
 
     function filterSelection(topic) {
@@ -42,7 +46,8 @@ const TopicsList = (props) => {
     
                     case "Explorar": handleToServiceExplore();
                     break;
-    
+                    case "Perfil": handleToPerfil();
+                    break;
                     default: handleToHome();
                 }
             } else {
