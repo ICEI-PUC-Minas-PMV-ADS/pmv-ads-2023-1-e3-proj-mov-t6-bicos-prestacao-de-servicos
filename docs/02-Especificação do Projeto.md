@@ -102,7 +102,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-005| A aplicação deverá permitir o contratante criar oportunidades de serviço | ALTA|
 |RF-006| A aplicação deverá permitir o contratante selecionar a categoria do serviço em questão.| MEDIA |
 |RF-007| A aplicação deverá exibir as especificações de cada serviço aos contratados como VALOR, LOCAL, PERÍODO e FUNÇÃO | ALTA |
-|RF-008| A aplicação deve permitir que o contratado canditate-se as oportunidades de serviço | ALTA | 
+|RF-008| A aplicação deve permitir que o contratado candidate-se as oportunidades de serviço | ALTA | 
 |RF-009| A aplicação deverá possuir a funcionalidade de busca e filtragem das oportunidades de serviço | BAIXA |
 |RF-010| A aplicação deverá sugerir serviços aos contratados baseando-se em seus dados pessoais | MEDIA | 
 |RF-011| A aplicação deverá permitir que os usuários tenham as infomações de contato de ambos | ALTA | 
