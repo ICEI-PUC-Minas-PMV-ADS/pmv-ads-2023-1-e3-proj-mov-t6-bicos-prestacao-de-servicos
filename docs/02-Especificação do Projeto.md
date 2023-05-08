@@ -107,7 +107,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 |RF-010| A aplicação deverá sugerir serviços aos contratados baseando-se em seus dados pessoais | MEDIA | 
 |RF-011| A aplicação deverá permitir que os usuários tenham as infomações de contato de ambos | ALTA | 
 |RF-012| A aplicação deverá permitir que os usuários façam o login e loggout | ALTA |
-|RF-013| A aplicação deverá possuir o contratante avaliar o contratado após o serviço | BAIXA |
+|RF-013| A aplicação deverá permitir que o contratante avalie o contratado após o serviço | BAIXA |
 
 
 
