@@ -46,6 +46,7 @@ export const SearchArea = styled.View`
 export const SkillCardArea = styled.View`
 	margin-top: 5%;
 	width: 100%;
+	height: 500px;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -86,7 +87,7 @@ export const InputContainer = styled.View`
 export const SearchButton = styled.TouchableOpacity`
 	width: 22%;
 	height: 50px;
-	background-color: #EB910B;
+	background-color: #FF6601;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
 	align-items: center;

@@ -4,7 +4,7 @@ export const Content = styled.View`
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-color: #EB910B;
+    background-color: #FF6601;
     border-radius: 10px;
     padding: 10px;
     margin-bottom: 10px;

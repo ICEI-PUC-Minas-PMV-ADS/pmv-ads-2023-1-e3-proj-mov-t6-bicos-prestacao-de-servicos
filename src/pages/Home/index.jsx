@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigation } from "@react-navigation/native";
+import axios from "axios";
 
 import PerfilHeaderBird from "../../components/PerfilHeaderCard";
 import HeaderOptions from "../../components/HeaderOptions";
@@ -34,6 +34,25 @@ const Home = () => {
 	const [cakeFilter, setCakeFilter] = useState(false);
 	const [bookFilter, setBookFilter] = useState(false);
 	const [informaticsFilter, setInformaticsFilter] = useState(false);
+
+	const [input, setInput] = useState("");
+
+	const [jobs, setJobs] = useState([]);
+
+	const getAllJobs = async () => {
+		const response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/jobs`)
+		return response.data
+	}
+
+	useEffect(() => {
+		const jobs = async () => {
+			const response = await getAllJobs();
+			setJobs(response);
+		}
+		jobs();
+	}, []);
+
+	
 
 	return (
 		<Container>
@@ -117,32 +136,25 @@ const Home = () => {
 					}
 				/>
 
-				<JobCard 
-					title={"Pedreiro Experiente"} 
-					imageUrl={"https://th.bing.com/th/id/R.020cc1e31ab2012c21d3bf221899de33?rik=dMWiuCUwQVK8%2bg&pid=ImgRaw&r=0"}
-					price={10}
-					kmDistance={24}
-				/>
 
-				<JobCard 
-					title={"Mecânico Pegeout"} 
-					imageUrl={"https://img.estadao.com.br/resources/jpg/6/5/1511721627356.jpg"}
-					price={35}
-					kmDistance={5}
-				/>
+				{jobs.map((job, index) => (
+					<JobCard 
+						key={index}
+						id={index}
+						title={job.descricao} 
+						imageUrl={job.imageUrl}
+						price={job.preco}
+						categoria={job.categoria}
+						kmDistance={24}
+					/>
+				))}
 
-				<JobCard 
-					title={"Cortar grama"} 
-					imageUrl={"https://th.bing.com/th/id/R.9bcf196063fd75070577c53cf363ff99?rik=7XXoJUJAw4TclA&pid=ImgRaw&r=0"}
-					price={27}
-					kmDistance={12}
-				/>
 				
 			</JobsArea>
 
 			<Footer 
 				startSelection={0}
-
+					
 			/>
 
 		</Container>
@@ -150,4 +162,5 @@ const Home = () => {
 };
 
 export default Home;
+
 

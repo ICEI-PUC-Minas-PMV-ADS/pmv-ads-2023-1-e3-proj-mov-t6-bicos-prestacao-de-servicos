@@ -1,3 +1,6 @@
+import { useNavigation, useRoute} from "@react-navigation/native";
+import { useCallback } from "react";
+
 import { Image, Text, View, StyleSheet, ScrollView } from "react-native";
 import Obra from "../../assets/obra.jpg";
 
@@ -7,28 +10,40 @@ import { AntDesign } from "@expo/vector-icons";
 import Categories from "./categories";
 import { MaterialIcons } from "@expo/vector-icons";
 
+
+
+
 function ServicePage() {
+
+  const { endpoint, text } = route.params.setData;
+
+  const navigation = useNavigation();
+
+	const handleToHome = useCallback(() => {
+		navigation.navigate("Home");
+	}, []);
+
   return (
     <ScrollView>
       <View style={style.container}>
         {/* SECTION TITLE + IMAGE */}
         <View style={style.section_1}>
           <View style={style.flexTitle}>
-            <MaterialIcons name="wallet-travel" size={24} color="#f0843d" />
+            <MaterialIcons name="wallet-travel" size={24} color="#FF6601" />
             <Text style={style.titleService}>Pedreiro experiente</Text>
           </View>
           <Image source={Obra} alt="Image work" style={style.image} />
           <View style={style.wrapper} />
           {/* FLEX */}
           <View style={style.flex}>
-            <Entypo name="location-pin" size={24} color="#f0843d" />
+            <Entypo name="location-pin" size={24} color="#FF6601" />
             <Text style={style.text}>10 KM de distancia</Text>
           </View>
         </View>
 
         <View style={style.containerDescription}>
           <View style={style.flex}>
-            <FontAwesome5 name="cash-register" size={24} color="#f0843d" />
+            <FontAwesome5 name="cash-register" size={24} color="#FF6601" />
             <Text style={style.subTitle}>Remuneração: </Text>
           </View>
           <View style={style.wrapper} />
@@ -37,7 +52,7 @@ function ServicePage() {
 
         <View style={style.containerDescription}>
           <View style={style.flex}>
-            <AntDesign name="clockcircle" size={24} color="#f0843d" />
+            <AntDesign name="clockcircle" size={24} color="#FF6601" />
             <Text style={style.subTitle}>Tempo de servico: </Text>
           </View>
           <View style={style.wrapper} />
@@ -53,7 +68,13 @@ function ServicePage() {
           </Text>
         </View>
 
-        <Text style={style.button}>Aplicar a vaga</Text>
+        <Text 
+          onPress={() => {
+            alert("Aplicado para a vaga com sucesso!")
+            handleToHome();
+          }}
+        
+        style={style.button}>Aplicar a vaga</Text>
       </View>
     </ScrollView>
   );
@@ -69,11 +90,9 @@ export const style = StyleSheet.create({
     flexDirection: "column",
     alignItems: "center",
     justifyContent: "flex-start",
-
     paddingTop: 20,
     paddingBottom: 25,
-
-    backgroundColor: "#d8d8d8",
+    backgroundColor: "#F0F0F0",
     flexGrow: 1,
     overflow: "scroll",
   },
@@ -92,7 +111,7 @@ export const style = StyleSheet.create({
     marginTop: 30,
     marginHorizontal: 20,
     borderRadius: 10,
-    width: "80%",
+    width: "90%",
   },
 
   containerDescription: {
@@ -104,7 +123,7 @@ export const style = StyleSheet.create({
     marginTop: 5,
     marginHorizontal: 20,
     borderRadius: 10,
-    width: "80%",
+    width: "90%",
   },
   flex: {
     display: "flex",
@@ -117,9 +136,10 @@ export const style = StyleSheet.create({
     textAlign: "center",
     fontSize: 24,
     fontWeight: "700",
-    color: "#f0843d",
+    color: "#FF6601",
     marginBottom: 10,
     marginTop: 15,
+    fontFamily: "DMSans_700Bold"
   },
   image: {
     width: 180,
@@ -127,7 +147,7 @@ export const style = StyleSheet.create({
     marginBottom: 10,
   },
   wrapper: {
-    width: "70%",
+    width: "80%",
     borderBottomColor: "#cfcfcf",
     borderBottomWidth: 1,
     marginTop: 5,
@@ -136,16 +156,18 @@ export const style = StyleSheet.create({
   subTitle: {
     fontSize: 16,
     fontWeight: "700",
-    color: "#3a3a3a",
+    color: "#3f3f3f",
+    fontFamily: "DMSans_400Regular",
     marginTop: 6,
   },
   text: {
     fontSize: 14,
     color: "#666666",
     marginBottom: 13,
+    fontFamily: "DMSans_400Regular"
   },
   categorie: {
-    width: "80%",
+    width: "90%",
     gap: 50,
     display: "flex",
     flexDirection: "row",
@@ -153,13 +175,16 @@ export const style = StyleSheet.create({
   description: {
     fontSize: 14,
     padding: 10,
+    color: "#3f3f3f",
+    fontFamily: "DMSans_400Regular"
   },
   button: {
     padding: 10,
-    width: "80%",
+    width: "90%",
     borderRadius: 10,
     textAlign: "center",
-    backgroundColor: "#f0843d",
+    fontFamily: "DMSans_400Regular",
+    backgroundColor: "#FF6601",
     fontWeight: "700",
     color: "#fff",
   },

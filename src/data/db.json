@@ -1,0 +1,37 @@
+{
+    "jobs": [
+        {
+            "id": 1,
+            "descricao": "Pedreiro Experiente",
+            "apresentacao": "Pedreiro experiente pra levantar a casa rápido",
+            "categoria": "reformas",
+            "preco": "20",
+            "created_at": "01/05/2023",
+            "imageUrl": "https://th.bing.com/th/id/R.020cc1e31ab2012c21d3bf221899de33?rik=dMWiuCUwQVK8%2bg&pid=ImgRaw&r=0",
+            "tempo_servico": "4 horas p/ dia"
+
+        },
+        {
+            "id": 2,
+            "descricao": "Mecânico Pegeout",
+            "apresentacao": "Mecânico que entenda de carros Pegeout para resolver meu problema no painel do mesmo",
+            "categoria": "automovel",
+            "preco": "65",
+            "created_at": "03/05/2023",
+            "imageUrl": "https://img.estadao.com.br/resources/jpg/6/5/1511721627356.jpg",
+            "tempo_servico": "livre"
+
+        },
+        {
+            "id": 3,
+            "descricao": "Cortar Grama",
+            "apresentacao": "Cortar a grama da minha casa",
+            "categoria": "reformas",
+            "preco": "12",
+            "created_at": "05/05/2023",
+            "imageUrl": "https://th.bing.com/th/id/R.ed5e8bcecd03cba4a42075ce69609e3e?rik=zt1CWAEBuRnTjw&pid=ImgRaw&r=0",
+            "tempo_servico": "terminar em 1 dia"
+
+        }
+    ]
+}
