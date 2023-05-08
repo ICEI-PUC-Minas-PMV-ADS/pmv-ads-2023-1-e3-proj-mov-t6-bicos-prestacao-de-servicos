@@ -11,12 +11,29 @@ https://www.figma.com/file/H1LvDAe39TLO9qtRYDHXs0/BICOS---SERVI%C3%87OS?node-id=
 Relacionando o desenvolvimento feito aos requisitos do sistema, até o momento contempla-se os requisitos:
 <pre>
 | RF-001 | A aplicação deverá possuir uma apresentação breve do aplicativo | <br />
-| RF-002 | A aplicação deverá permitir o cadastro de dois tipos de usuários, o trabalhador em "Trabalhar" e o contratante em "Contratar" |
+| RF-002 | A aplicação deverá permitir o cadastro de dois tipos de usuários, o trabalhador em "Trabalhar" e o contratante em "Contratar" | <br />
+| RF-004 | A aplicação terá um perfil de usuário para o contratado com suas qualificações e preferências | <br />
+| RF-007 | A aplicação deverá exibir as especificações de cada serviço aos contratados como VALOR, LOCAL, PERÍODO e FUNÇÃO | <br />
+| RF-008 | A aplicação deve permitir que o contratado canditate-se as oportunidades de serviço | <br />
+| RF-009 | A aplicação deverá possuir a funcionalidade de busca e filtragem das oportunidades de serviço | <br />
+| RF-012 | A aplicação deverá permitir que os usuários façam o login e loggout |
 </pre>
 Esses requisitos foram alcançados pelo desenvolvimento da tela de login / registro da aplicação e a tela inicial.
 Temos lá a descrição breve e também a distinção do usuário contratante e contratado. 
 
 ![image](https://user-images.githubusercontent.com/68014636/229312817-8512858b-ab95-4803-917c-aa4f3987fc65.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/perfil1.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/servi%C3%A7o2.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/explorar%20servi%C3%A7os3.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/login4.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/home5.png)
+
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/registro6.png)
 <hr />
 <h3>Instruções de acesso</h3>
 
