@@ -4,6 +4,7 @@ import { useNavigation, useRoute } from "@react-navigation/native";
 import PerfilHeaderBird from "../../components/PerfilHeaderCard";
 import HeaderOptions from "../../components/HeaderOptions";
 
+import ConfigIcon from "../../assets/configs"
 import TitleIcon from "../../assets/fire"
 import Footer from "../../components/Footer";
 
@@ -32,7 +33,7 @@ import JobCard from "./JobCard";
 
 
 const getJobs = async (endpoint) => {
-	const response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/servicos?categoria=${endpoint}`)
+	const response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/jobs?categoria=${endpoint}`)
 	return response.data
 }
 
@@ -41,11 +42,6 @@ const ServicesExplorer = (props) => {
 	const route = useRoute();
 	const { endpoint, text } = route.params.setFilter;
 
-	const [buildFilter, setBuildFilter] = useState(false);
-	const [carFilter, setCarFilter] = useState(false);
-	const [cakeFilter, setCakeFilter] = useState(false);
-	const [bookFilter, setBookFilter] = useState(false);
-	const [informaticsFilter, setInformaticsFilter] = useState(false);
 	const [input, setInput] = useState("");
 
 	const [jobs, setJobs] = useState([]);
@@ -59,7 +55,7 @@ const ServicesExplorer = (props) => {
 			response = await getJobs(endpoint);
 			return setJobs(response)
 		} else {
-			response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/servicos?categoria=${endpoint}&q=${input}`)
+			response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/jobs?categoria=${endpoint}&q=${input}`)
 		}
 
 		return setJobs(response.data)
@@ -102,7 +98,11 @@ const ServicesExplorer = (props) => {
 					<SearchInput placeholder="Pesquisar..." value={input} onChangeText={setInput} />
 				</InputContainer>
 
-				<SearchButton onPress={() => handleSearchJob(input)}><SearchButtonText>Pesquisar</SearchButtonText></SearchButton>
+				<SearchButton onPress={() => handleSearchJob(input)}>
+					<SearchButtonText>
+						<ConfigIcon />
+					</SearchButtonText>
+				</SearchButton>
 			</SearchArea>
 
 			<JobsArea contentContainerStyle={stylesList.list}>
@@ -117,7 +117,9 @@ const ServicesExplorer = (props) => {
 			</JobsArea>
 
 
-			<Footer />
+			<Footer 
+				startSelection={1}
+			/>
 
 		</Container>
 	);

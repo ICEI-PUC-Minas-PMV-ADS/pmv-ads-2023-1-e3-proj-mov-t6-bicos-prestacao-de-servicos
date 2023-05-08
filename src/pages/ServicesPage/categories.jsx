@@ -6,7 +6,7 @@ const Categories = () => {
     <View style={style.categorie}>
       <View style={style.containerCategory}>
         <View style={style.flex}>
-          <AntDesign name="tags" size={24} color="#f0843d" />
+          <AntDesign name="tags" size={24} color="#FF6601" />
           <Text style={style.subTitle}>Categoria</Text>
         </View>
         <Text style={style.text}>Reformas</Text>
@@ -16,7 +16,7 @@ const Categories = () => {
       <View style={style.containerCategory}>
         <Text style={style.subTitle}>Contratante</Text>
         <Image />
-        <Text>Fred Versalhes</Text>
+        <Text style={style.text}>Fred Versalhes</Text>
       </View>
     </View>
   );
@@ -29,8 +29,8 @@ export const style = StyleSheet.create({
     alignContent: "flex-start",
     justifyContent: "center",
     backgroundColor: "#fff",
+    width: "48%",
     height: 100,
-    padding: 10,
     borderRadius: 10,
   },
   flex: {
@@ -48,23 +48,24 @@ export const style = StyleSheet.create({
     marginBottom: 5,
   },
   subTitle: {
+    fontFamily: "DMSans_400Regular",
     fontSize: 16,
     fontWeight: "700",
     color: "#3a3a3a",
     marginTop: 6,
   },
   text: {
+    fontFamily: "DMSans_400Regular",
     fontSize: 14,
     color: "#666666",
     marginBottom: 13,
   },
   categorie: {
-    width: "80%",
-    gap: 50,
+    width: "90%",
     display: "flex",
     flexDirection: "row",
     alignItems: "flex-start",
-    justifyContent: "flex-start",
+    justifyContent: "space-between",
     display: "flex",
     textAlign: "center",
   },

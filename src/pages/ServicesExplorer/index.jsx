@@ -11,6 +11,7 @@ import SkillCardExplorer from "./SkillCardExplorer"
 import Footer from "../../components/Footer";
 
 
+
 import {
     Container,
     Header,
@@ -55,11 +56,6 @@ const skills = [
 
 
 const ServicesExplorer = () => {
-    const [buildFilter, setBuildFilter] = useState(false);
-    const [carFilter, setCarFilter] = useState(false);
-    const [cakeFilter, setCakeFilter] = useState(false);
-    const [bookFilter, setBookFilter] = useState(false);
-    const [informaticsFilter, setInformaticsFilter] = useState(false);
 
     return (
         <Container>
@@ -91,6 +87,7 @@ const ServicesExplorer = () => {
                     ))}
                 </SkillCardArea>
             </JobsArea>
+            
 
             <Footer
                 startSelection={1}

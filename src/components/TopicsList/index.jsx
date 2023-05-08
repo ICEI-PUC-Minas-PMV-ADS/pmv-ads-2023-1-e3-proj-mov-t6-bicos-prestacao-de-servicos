@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 
 import CompassIcon from "../../assets/compassIcon"
 import HouseIcon from "../../assets/houseIcon"
@@ -16,11 +17,41 @@ const TopicsList = (props) => {
 
     const [isSelected, setIsSelected] = useState(props.startSelection);
 
+    //Em caso de utilizar navegação com as opções do Topiclist
+    
+    const navigation = useNavigation();
+
+	const handleToServiceExplore = useCallback(() => {
+		navigation.navigate("ServicesExplorer");
+	}, []);
+
+    const handleToHome = useCallback(() => {
+		navigation.navigate("Home");
+	}, []);
+
+    //
+
     function filterSelection(topic) {
         if(topic.key != isSelected) {
-            setIsSelected(topic.key)
+
+            let topicSelected = props.topics[topic.key];
+
+            if(topicSelected.isNavigator === true) {
+                
+                switch(topicSelected.text) {
+    
+                    case "Explorar": handleToServiceExplore();
+                    break;
+    
+                    default: handleToHome();
+                }
+            } else {
+                setIsSelected(topic.key)
+            }
+
         }
     }
+
 
     function iconValidator(iconName) {
         switch(iconName) {
@@ -34,7 +65,6 @@ const TopicsList = (props) => {
                 return <PersonIcon />
         }
     }
-
 
 
     return (

@@ -1,3 +1,6 @@
+import { useCallback } from "react";
+import { useNavigation } from "@react-navigation/native";
+
 import TopicsList from "../TopicsList";
 
 
@@ -7,7 +10,7 @@ import {
 
 
 const Footer = (props) => {
-
+    
 	return (
 		<Container>
             <TopicsList 
@@ -17,17 +20,20 @@ const Footer = (props) => {
                         {
                             key: 0,
                             text: "Home",
-                            isIcon: true
+                            isIcon: true,
+                            isNavigator: true
                         },
                         {
                             key: 1,
                             text: "Explorar",
-                            isIcon: true
+                            isIcon: true,
+                            isNavigator: true
                         },
                         {
                             key: 2,
                             text: "Perfil",
-                            isIcon: true
+                            isIcon: true,
+                            isNavigator: true
                         }
                     ]
                 }

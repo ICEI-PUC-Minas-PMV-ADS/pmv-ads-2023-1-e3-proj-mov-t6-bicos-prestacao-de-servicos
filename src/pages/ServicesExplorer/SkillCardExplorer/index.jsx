@@ -14,9 +14,7 @@ import WhiteCake from "../../../assets/whiteCake"
 import {
     Container,
     Text,
-    TextSelected,
-    Content,
-    ContentSelected
+    Content
 } from "./styles";
 import { useNavigation } from '@react-navigation/native';
 
@@ -38,23 +36,6 @@ const SkillCardExplorer = (props) => {
                 return <GreyCake />
             default:
                 return <GreyScreen />
-        }
-    }
-
-    function IconWhiteSelector(typeButton) {
-
-        switch (typeButton) {
-
-            case "build":
-                return <WhiteBuild />
-            case "car":
-                return <WhiteCar />
-            case "book":
-                return <WhiteBook />
-            case "cake":
-                return <WhiteCake />
-            default:
-                return <WhiteScreen />
         }
     }
 
