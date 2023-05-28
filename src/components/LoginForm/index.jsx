@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
+import axios from "axios";
 import { useCallback, useState } from "react";
-import { Pressable } from "react-native";
+import { Alert, Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import LockerIcon from "../../assets/locker";
 import MailIcon from "../../assets/mail";

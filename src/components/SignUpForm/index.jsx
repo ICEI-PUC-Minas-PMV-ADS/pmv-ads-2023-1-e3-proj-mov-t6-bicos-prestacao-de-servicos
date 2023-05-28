@@ -1,6 +1,7 @@
 import { useNavigation } from "@react-navigation/native";
+import axios from "axios";
 import { useCallback, useState } from "react";
-import { Pressable } from "react-native";
+import { Alert, Pressable } from "react-native";
 import EyeIcon from "../../assets/eyeicon";
 import IdIcon from "../../assets/id";
 import LockerIcon from "../../assets/locker";
@@ -51,6 +52,7 @@ const SignUpForm = ({ client }) => {
 				handleToSignUp();
 			})
 			.catch((err) => {
+				Alert.alert("Usuário ou senha incorretos.");
 				console.log(JSON.stringify(err));
 			});
 	}, [name, lastName, email, password]);
