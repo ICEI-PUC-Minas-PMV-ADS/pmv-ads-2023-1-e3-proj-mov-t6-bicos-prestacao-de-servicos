@@ -1,18 +1,5 @@
 import styled from "styled-components/native";
 
-export const Container = styled.View`
-	height: 100%;
-	justify-content: center;
-`;
-export const LoginTitle = styled.Text`
-	margin-top: 30px;
-	margin-bottom: 30px;
-	color: white;
-	font-size: 18px;
-	text-align: center;
-	font-family: DMSans_400Regular;
-`;
-
 export const Button = styled.Pressable`
 	margin: 10px;
 	display: flex;
@@ -61,7 +48,6 @@ export const SignUpDescription = styled.View`
 	flex-direction: row;
 	justify-content: center;
 	gap: 5px;
-	margin-bottom: 15px;
 `;
 export const SignUpLink = styled.Text`
 	color: black;
