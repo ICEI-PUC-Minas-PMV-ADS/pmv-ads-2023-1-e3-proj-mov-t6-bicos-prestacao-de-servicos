@@ -47,7 +47,6 @@ const Login = () => {
 			password,
 		};
 
-
 		 axios
 		 	.post("http://10.0.2.2:3000/login", body)
 		 	.then((res) => {
@@ -59,10 +58,16 @@ const Login = () => {
 		 	});
 	}, [email, password]);
 
+	const handleToPerfilPage = useCallback(() => {
+		navigation.navigate("PerfilPage");
+	}, []);
+	
 	return (
 		<BackgroundImage>
 			<Container>
-				<Slogan text="Seja bem-vindo de volta!" />
+				<Pressable onPress={handleToPerfilPage}>
+					<Slogan text="Seja bem-vindo de volta!"	/>
+				</Pressable>
 				<LoginTitle> Faça login na sua conta </LoginTitle>
 				<ContainerForm>
 					<Fields>
