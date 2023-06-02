@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import axios from "axios";
+import { Pressable } from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 import PerfilHeaderBird from "../../components/PerfilHeaderCard";
 import HeaderOptions from "../../components/HeaderOptions";
@@ -52,12 +54,20 @@ const Home = () => {
 		jobs();
 	}, []);
 
+
+	const navigation = useNavigation();
 	
+	const handleToPerfilPage = useCallback(() => {
+		navigation.navigate("PerfilPage");
+	}, []);
+
 
 	return (
 		<Container>
 			<Header>
-				<PerfilHeaderBird title="Gabriel" />
+				<Pressable onPress={handleToPerfilPage}>
+					<PerfilHeaderBird title="Gabriel" />
+				</Pressable>
 				<HeaderOptions />
 			</Header>
 

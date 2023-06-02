@@ -6,9 +6,7 @@ import PerfilChoose from "../pages/PerfilChoose";
 import PerfilPage from "../pages/PerfilPage";
 import ServicesExplorer from "../pages/ServicesExplorer";
 import SkillExplorer from "../pages/ServicesExplorer/SkillExplorer";
-import ServicePage from "../pages/ServicesPage";
-import WorkLogin from "../pages/WorkLogin";
-import WorkSignUp from "../pages/WorkSignUp";
+import PerfilEditPage from "../pages/PerfilEditPage";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -29,6 +27,8 @@ export function AppRoutes() {
 			<Screen name="ServicesExplorer" component={ServicesExplorer} />
 			<Screen name="SkillExplorer" component={SkillExplorer} />
 			<Screen name="PerfilPage" component={PerfilPage} />
+			<Screen name="PerfilEditPage" component={PerfilEditPage} />
+
 		</Navigator>
 	);
 }
