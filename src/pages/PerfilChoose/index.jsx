@@ -7,10 +7,13 @@ import { Container, ContainerButton, QuestionText } from "./styles";
 
 const PerfilChoose = () => {
 	const navigation = useNavigation();
-	const handleToLogin = useCallback(() => {
-		navigation.navigate("Login");
+	const handleToWorkLogin = useCallback(() => {
+		navigation.navigate("WorkLogin");
 	}, []);
 
+	const handleToHireLogin = useCallback(() => {
+		navigation.navigate("HireLogin");
+	}, []);
 	return (
 		<BackgroundImage imagePath={"../../assets/backgroundOrange.png"}>
 			<Container>
@@ -18,8 +21,8 @@ const PerfilChoose = () => {
 				<QuestionText>O que você busca?</QuestionText>
 
 				<ContainerButton>
-					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
-					<BirdsButton title="Contratar" contractButton={true} />
+					<BirdsButton title="Trabalhar" onPress={handleToWorkLogin} />
+					<BirdsButton title="Contratar" onPress={handleToHireLogin} />
 				</ContainerButton>
 			</Container>
 		</BackgroundImage>

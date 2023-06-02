@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
 		marginTop: -30,
 	},
 	title: {
-		fontSize: 40,
+		fontSize: 35,
 		fontFamily: "DMSans_700Bold",
 		fontWeight: "bold",
 		color: "white",
@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
 		paddingTop: 25,
 		fontFamily: "DMSans_400Regular",
 		color: "white",
-		fontSize: 18,
+		fontSize: 16,
 		textAlign: "center",
 	},
 });
