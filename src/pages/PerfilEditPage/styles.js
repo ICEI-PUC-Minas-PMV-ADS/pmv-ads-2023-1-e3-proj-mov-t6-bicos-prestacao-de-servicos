@@ -71,6 +71,7 @@ export const DataPerfil = styled.View`
 	width: 85%;
 	border-radius: 10px;
 	padding: 5%;
+	
 `;
 
 export const Fields = styled.View`

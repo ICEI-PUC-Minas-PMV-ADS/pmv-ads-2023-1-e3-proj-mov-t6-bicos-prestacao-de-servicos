@@ -58,16 +58,11 @@ const Login = () => {
 		 	});
 	}, [email, password]);
 
-	const handleToPerfilPage = useCallback(() => {
-		navigation.navigate("PerfilPage");
-	}, []);
 	
 	return (
 		<BackgroundImage>
 			<Container>
-				<Pressable onPress={handleToPerfilPage}>
 					<Slogan text="Seja bem-vindo de volta!"	/>
-				</Pressable>
 				<LoginTitle> Faça login na sua conta </LoginTitle>
 				<ContainerForm>
 					<Fields>
