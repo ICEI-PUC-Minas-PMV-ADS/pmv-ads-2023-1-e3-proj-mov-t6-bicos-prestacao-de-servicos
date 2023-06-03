@@ -9,6 +9,8 @@ import SkillExplorer from "../pages/ServicesExplorer/SkillExplorer";
 import ServicePage from "../pages/ServicesPage";
 import WorkLogin from "../pages/WorkLogin";
 import WorkSignUp from "../pages/WorkSignUp";
+import CreateEditServices from "../pages/CreateEditServices";
+import ServicesForm from "../pages/CreateEditServices/ServicesForm";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -29,6 +31,8 @@ export function AppRoutes() {
 			<Screen name="ServicesExplorer" component={ServicesExplorer} />
 			<Screen name="SkillExplorer" component={SkillExplorer} />
 			<Screen name="PerfilPage" component={PerfilPage} />
+			<Screen name="CreateEditServices" component={CreateEditServices} />
+			<Screen name="ServicesForm" component={ServicesForm} />
 		</Navigator>
 	);
 }
