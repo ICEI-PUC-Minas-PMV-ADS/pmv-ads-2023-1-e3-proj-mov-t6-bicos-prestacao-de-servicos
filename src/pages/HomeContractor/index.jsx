@@ -87,7 +87,7 @@ const HomeContractor = () => {
                     title="Gabriel" 
                     isContractor={true}
                 />
-				<HeaderOptions />
+				<HeaderOptions isContractor={true}/>
 			</Header>
 
 			<TitleArea>

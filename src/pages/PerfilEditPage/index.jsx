@@ -130,9 +130,21 @@ const PerfilEditPage = () => {
 				<Skills>
 					<SkillText><Title>Especialidades</Title></SkillText>
 					<SkillInfo>
-						<SkillCard iconType={"build"} text={"Pedreiro"} />
-						<SkillCard iconType={"car"} text={"Motorista"} />
-						<SkillCard iconType={"book"} text={"Professor"} />
+						<SkillCard 
+							withoutClick={true} 
+							iconType={"build"} 
+							text={"Pedreiro"} 
+						/>
+						<SkillCard 
+							withoutClick={true} 
+							iconType={"car"} 
+							text={"Motorista"} 
+						/>
+						<SkillCard 
+							withoutClick={true} 
+							iconType={"book"} 
+							text={"Professor"} 
+						/>
 					</SkillInfo>
 				</Skills>
 			</DataPerfil>

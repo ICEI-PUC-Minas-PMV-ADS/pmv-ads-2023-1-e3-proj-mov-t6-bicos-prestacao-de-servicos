@@ -6,9 +6,11 @@ import PerfilChoose from "../pages/PerfilChoose";
 import PerfilPage from "../pages/PerfilPage";
 import ServicesExplorer from "../pages/ServicesExplorer";
 import SkillExplorer from "../pages/ServicesExplorer/SkillExplorer";
-import PerfilPage from "../pages/PerfilPage"
 import HomeContractor from "../pages/HomeContractor";
 import PerfilEditPage from "../pages/PerfilEditPage";
+import WorkLogin from "../pages/WorkLogin";
+import WorkSignUp from "../pages/WorkSignUp";
+import ServicePage from "../pages/ServicesPage";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
