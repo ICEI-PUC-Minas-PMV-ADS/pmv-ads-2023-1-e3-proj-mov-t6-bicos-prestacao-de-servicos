@@ -142,10 +142,11 @@ const Home = () => {
 						key={index}
 						id={index}
 						title={job.descricao} 
+						apresentation={job.apresentacao}
 						imageUrl={job.imageUrl}
 						price={job.preco}
 						categoria={job.categoria}
-						kmDistance={24}
+						kmDistance={job.distancia_km}
 					/>
 				))}
 
