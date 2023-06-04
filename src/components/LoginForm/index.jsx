@@ -42,6 +42,10 @@ const LoginForm = ({ client }) => {
 		navigation.navigate("Home");
 	}, []);
 
+	const handleToHireHome = useCallback(() => {
+		navigation.navigate("HomeContractor");
+	}, []);
+
 	const handleLogin = useCallback(() => {
 		const body = {
 			email,
@@ -61,7 +65,7 @@ const LoginForm = ({ client }) => {
 			axios
 				.post("http://10.0.2.2:3000/login", body)
 				.then((res) => {
-					handleToHome();
+					handleToHireHome();
 				})
 				.catch((err) => {
 					Alert.alert("Usuário ou senha incorretos.");

@@ -7,15 +7,6 @@ export const Container = styled.View`
     margin-bottom: 5%;
 `;
 
-export const SearchInput = styled.TextInput`
-    width: 93%;
-    height: 50px;
-    background-color: #FFFFFF;
-    font-family: DMSans_400Regular;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-`;
-
 export const SvgController = styled.View`
     background-color: #FFFFFF;
     

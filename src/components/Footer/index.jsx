@@ -15,6 +15,7 @@ const Footer = (props) => {
 		<Container>
             <TopicsList 
                 startSelection={props.startSelection}
+                isContractor={props.isContractorFooter}
                 topics={
                     [
                         {

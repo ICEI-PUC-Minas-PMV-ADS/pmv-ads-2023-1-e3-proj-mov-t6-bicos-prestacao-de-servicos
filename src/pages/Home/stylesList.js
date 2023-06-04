@@ -7,7 +7,7 @@ const stylesList = StyleSheet.create({
 		display: "flex",
 		flexDirection: "row",
 		flexWrap: "wrap",
-		marginTop: 1
+		marginTop: 1,
 	},
 });
 

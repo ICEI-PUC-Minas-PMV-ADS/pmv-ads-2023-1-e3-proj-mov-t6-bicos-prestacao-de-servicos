@@ -15,12 +15,16 @@ import {
 
 
 
-const HeaderOptions = () => {
+const HeaderOptions = (props) => {
 
   const navigation = useNavigation();
 
 	const handleToLogin = useCallback(() => {
-		navigation.navigate("Login");
+    if(props.isContractor === true) {
+		  navigation.navigate("HireLogin");
+    } else {
+      navigation.navigate("WorkLogin");
+    }
 	}, []);
 
 	return (
