@@ -2,8 +2,6 @@ import React, { useCallback } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 
-import PerfilImage from "../../assets/perfilImage";
-
 import EditPerfilIcon from "../../assets/editPerfil";
 import MailIcon from "../../assets/mail";
 import BigBirdIcon from "../../assets/bigbird";
@@ -102,7 +100,7 @@ const PerfilPage = () => {
 				</Skills>
 			</DataPerfil>
 		</ContentPerfil>
-		<Footer startSelection={2} />
+		<Footer startSelection={2}/>
     </Container>
 	</>
 	);

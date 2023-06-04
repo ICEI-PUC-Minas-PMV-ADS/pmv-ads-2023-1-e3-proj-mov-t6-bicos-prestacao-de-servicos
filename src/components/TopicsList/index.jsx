@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useMemo, useState } from "react";
 import { useNavigation } from "@react-navigation/native";
 
 import CompassIcon from "../../assets/compassIcon"
@@ -17,7 +17,7 @@ const TopicsList = (props) => {
 
     const [isSelected, setIsSelected] = useState(props.startSelection);
 
-    //Em caso de utilizar navegação com as opções do Topiclist
+    //Em caso de utilizar navegação com as opções do Topiclist//
     
     const navigation = useNavigation();
 
@@ -26,14 +26,20 @@ const TopicsList = (props) => {
 	}, []);
 
     const handleToHome = useCallback(() => {
-		navigation.navigate("Home");
+        console.log(props.isContractor)
+        if(props.isContractor == true) {
+            navigation.navigate("HomeContractor");
+
+        } else {
+            navigation.navigate("Home");
+        }
+
 	}, []);
 
     const handleToPerfil = useCallback(() => {
 		navigation.navigate("PerfilPage");
 	}, []);
 
-    //
 
     function filterSelection(topic) {
         if(topic.key != isSelected) {
@@ -52,6 +58,7 @@ const TopicsList = (props) => {
                 }
             } else {
                 setIsSelected(topic.key)
+                props.onActive(topic.key)
             }
 
         }

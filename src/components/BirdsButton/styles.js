@@ -25,10 +25,6 @@ const styles = StyleSheet.create({
 		justifyContent: "space-evenly",
 		alignItems: "flex-end",
 	},
-	branchToWork: {
-		marginBottom: 7,
-		position: "relative",
-	},
 });
 
 export default styles;

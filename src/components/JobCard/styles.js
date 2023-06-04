@@ -57,5 +57,12 @@ export const LocateArea = styled.View`
     padding-bottom: 5px;
 `
 
+export const IconArea = styled.View`
+    display: flex;
+    padding-top: 5px;
+    padding-right: 5px;
+    position: absolute;
+    right: 0px;
+`
 
 

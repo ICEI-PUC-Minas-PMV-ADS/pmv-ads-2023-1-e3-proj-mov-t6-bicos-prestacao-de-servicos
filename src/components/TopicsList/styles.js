@@ -4,6 +4,7 @@ export const Container = styled.View`
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
 `;
 
 export const TopicText = styled.Text`

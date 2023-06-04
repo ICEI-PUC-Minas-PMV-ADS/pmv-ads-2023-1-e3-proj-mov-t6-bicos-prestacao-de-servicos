@@ -2,7 +2,6 @@ import SearchIcon from "../../assets/search";
 
 import {
 	Container,
-    SearchInput,
     SvgController
 } from "./styles";
 
@@ -14,8 +13,7 @@ const SearchBar = (props) => {
             <SvgController>
                 <SearchIcon />
             </SvgController>
-
-            <SearchInput placeholder={props.placeholder}/>
+            {props.children}
 		</Container>
 	);
 };
