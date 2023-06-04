@@ -9,7 +9,6 @@ import { MaterialIcons } from "@expo/vector-icons";
 function ServicePage() {
   const route = useRoute();
   const { setData } = route.params;
-  console.log(setData)
   const navigation = useNavigation();
 
   const handleToHome = useCallback(() => {
