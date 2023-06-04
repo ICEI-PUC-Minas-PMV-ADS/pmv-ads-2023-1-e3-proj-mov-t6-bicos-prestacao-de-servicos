@@ -285,6 +285,18 @@ const Home = () => {
 			/>
 			<JobsArea contentContainerStyle={stylesList.list}>
 
+				{jobs.map((job, index) => (
+					<JobCard 
+						key={index}
+						id={index}
+						title={job.descricao} 
+						apresentation={job.apresentacao}
+						imageUrl={job.imageUrl}
+						price={job.preco}
+						categoria={job.categoria}
+						kmDistance={job.distancia_km}
+					/>
+				))}
 				{isLoading ? (
 					<Loading />
 				) : (
