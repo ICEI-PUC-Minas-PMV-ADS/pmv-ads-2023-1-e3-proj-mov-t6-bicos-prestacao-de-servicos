@@ -9,7 +9,7 @@ export const PerfilCard = styled.View`
     padding-right: 8px;
     width: 45px;
     height: 45px;
-    background-color: #E7E7E7;
+    background-color: #E5E5E5;
     border-radius: 45px;
 
     justify-items: center;

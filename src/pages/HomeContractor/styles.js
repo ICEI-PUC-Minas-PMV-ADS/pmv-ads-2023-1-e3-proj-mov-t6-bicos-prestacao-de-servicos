@@ -36,33 +36,8 @@ export const Subtitle = styled.Text`
 	font-size: 12px;
 `
 
-export const SearchArea = styled.View`
-	margin-top: 10%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-`
-
-export const SkillCardArea = styled.View`
-	margin-top: 2%;
-	margin-bottom: 2%;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-`
-
 export const JobsArea = styled.ScrollView`
 `
-
-export const SearchInput = styled.TextInput`
-    width: 93%;
-    height: 50px;
-    background-color: #FFFFFF;
-    font-family: DMSans_400Regular;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-`;
 
 
 export const SearchButton = styled.Pressable`

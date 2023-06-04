@@ -2,7 +2,7 @@ import { Text, TouchableOpacity, View } from "react-native";
 
 import styles from "./styles";
 
-import HireBirds from "../../assets/hirebird";
+import HireBirds from "../../assets/hirebirds";
 import WorkBird from "../../assets/workbird";
 
 const BirdsButton = (props) => {

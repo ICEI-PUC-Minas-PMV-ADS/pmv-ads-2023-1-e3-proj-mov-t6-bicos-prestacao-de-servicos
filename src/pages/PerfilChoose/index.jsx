@@ -11,6 +11,11 @@ const PerfilChoose = () => {
 		navigation.navigate("Login");
 	}, []);
 
+	//PROVISORIO(AINDA NAO EXISTE REGISTER PRO CONTRATANTE)
+	const handleToHome2 = useCallback(() => {
+		navigation.navigate("HomeContractor");
+	}, []);
+
 	return (
 		<BackgroundImage imagePath={"../../assets/backgroundOrange.png"}>
 			<Container>
@@ -19,7 +24,7 @@ const PerfilChoose = () => {
 
 				<ContainerButton>
 					<BirdsButton title="Trabalhar" onPress={handleToLogin} />
-					<BirdsButton title="Contratar" contractButton={true} />
+					<BirdsButton title="Contratar" onPress={handleToHome2} contractButton={true} />
 				</ContainerButton>
 			</Container>
 		</BackgroundImage>
