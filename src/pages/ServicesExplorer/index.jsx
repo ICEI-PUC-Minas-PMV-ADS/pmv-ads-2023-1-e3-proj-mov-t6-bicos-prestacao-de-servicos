@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useNavigation } from "@react-navigation/native"
 
 import PerfilHeaderBird from "../../components/PerfilHeaderCard";
 import HeaderOptions from "../../components/HeaderOptions";
 
 import TitleIcon from "../../assets/fire"
-import SearchBar from "../../components/SearchBar"
-import SearchButton from "../../components/SearchButton"
 import SkillCardExplorer from "./SkillCardExplorer"
 import Footer from "../../components/Footer";
 

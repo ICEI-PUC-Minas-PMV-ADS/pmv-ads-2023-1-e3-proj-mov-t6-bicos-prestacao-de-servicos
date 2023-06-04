@@ -1,87 +1,97 @@
-import { useNavigation, useRoute} from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
 import { useCallback } from "react";
-
 import { Image, Text, View, StyleSheet, ScrollView } from "react-native";
-import Obra from "../../assets/obra.jpg";
-
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
-import Categories from "./categories";
 import { MaterialIcons } from "@expo/vector-icons";
 
-
-
-
 function ServicePage() {
-
- // const { endpoint, text } = route.params.setData;
-
+  const route = useRoute();
+  const { setData } = route.params;
   const navigation = useNavigation();
 
-	const handleToHome = useCallback(() => {
-		navigation.navigate("Home");
-	}, []);
+  const handleToHome = useCallback(() => {
+    navigation.navigate("Home");
+  }, []);
 
   return (
     <ScrollView>
-      <View style={style.container}>
+      <View style={styles.container}>
         {/* SECTION TITLE + IMAGE */}
-        <View style={style.section_1}>
-          <View style={style.flexTitle}>
+        <View style={styles.section_1}>
+          <View style={styles.flexTitle}>
             <MaterialIcons name="wallet-travel" size={24} color="#FF6601" />
-            <Text style={style.titleService}>Pedreiro experiente</Text>
+            <Text style={styles.titleService}>{setData.title}</Text>
           </View>
-          <Image source={Obra} alt="Image work" style={style.image} />
-          <View style={style.wrapper} />
+          <Image
+            source={setData.imageUrl}
+            alt="Image work"
+            style={styles.image}
+          />
+          <View style={styles.wrapper} />
           {/* FLEX */}
-          <View style={style.flex}>
+          <View style={styles.flex}>
             <Entypo name="location-pin" size={24} color="#FF6601" />
-            <Text style={style.text}>10 KM de distancia</Text>
+            <Text style={styles.text}>{setData.kmDistance} KM de distancia</Text>
           </View>
         </View>
 
-        <View style={style.containerDescription}>
-          <View style={style.flex}>
+        <View style={styles.containerDescription}>
+          <View style={styles.flex}>
             <FontAwesome5 name="cash-register" size={24} color="#FF6601" />
-            <Text style={style.subTitle}>Remuneração: </Text>
+            <Text style={styles.subTitle}>Remuneração: </Text>
           </View>
-          <View style={style.wrapper} />
-          <Text style={style.text}>R$ 100,00 por hora</Text>
+          <View style={styles.wrapper} />
+          <Text style={styles.text}>R$ {setData.price} por hora</Text>
         </View>
 
-        <View style={style.containerDescription}>
-          <View style={style.flex}>
+        <View style={styles.containerDescription}>
+          <View style={styles.flex}>
             <AntDesign name="clockcircle" size={24} color="#FF6601" />
-            <Text style={style.subTitle}>Tempo de servico: </Text>
+            <Text style={styles.subTitle}>Tempo de servico: </Text>
           </View>
-          <View style={style.wrapper} />
-          <Text style={style.text}>4 horas por 3 dias</Text>
+          <View style={styles.wrapper} />
+          <Text style={styles.text}>8 horas por dia</Text>
         </View>
 
-        <Categories />
+        <View style={styles.categorie}>
+          <View style={styles.containerCategory}>
+            <View style={styles.flex}>
+              <AntDesign name="tags" size={24} color="#FF6601" />
+              <Text style={styles.subTitle}>Categoria</Text>
+            </View>
+            <Text style={styles.text}>{setData.categoria}</Text>
+            <Image />
+          </View>
 
-        <View style={style.containerDescription}>
-          <Text style={style.description}>
-            Preciso de pedreiro experiente para levantar obra, pago adiantado,
-            de seguda a sexta, de 6h as 16h.
+          <View style={styles.containerCategory}>
+            <Text style={styles.subTitle}>Contratante</Text>
+            <Text style={styles.text}>Fred Versalhes</Text>
+          </View>
+        </View>
+
+        <View style={styles.containerDescription}>
+          <Text style={styles.description}>
+            {setData.apresentation}
           </Text>
         </View>
 
-        <Text 
+        <Text
           onPress={() => {
-            alert("Aplicado para a vaga com sucesso!")
-            handleToHome();
+            alert("Aplicado para a vaga com sucesso!"); // Exibe um alerta informando que a vaga foi aplicada com sucesso
+            handleToHome(); // Navega para a rota "Home" quando o botão é pressionado
           }}
-        
-        style={style.button}>Aplicar a vaga</Text>
+          style={styles.button}
+        >
+          Aplicar a vaga
+        </Text>
       </View>
     </ScrollView>
   );
 }
 
-export const style = StyleSheet.create({
-  // SECTION 1
+const styles = StyleSheet.create({
   container: {
     width: "100%",
     height: "100%",
@@ -113,7 +123,6 @@ export const style = StyleSheet.create({
     borderRadius: 10,
     width: "90%",
   },
-
   containerDescription: {
     display: "flex",
     alignItems: "center",
@@ -130,7 +139,6 @@ export const style = StyleSheet.create({
     flexDirection: "row",
     gap: 10,
     padding: 10,
-    // alignItems: "center",
   },
   titleService: {
     textAlign: "center",
@@ -139,7 +147,7 @@ export const style = StyleSheet.create({
     color: "#FF6601",
     marginBottom: 10,
     marginTop: 15,
-    fontFamily: "DMSans_700Bold"
+    fontFamily: "DMSans_700Bold",
   },
   image: {
     width: 180,
@@ -164,11 +172,11 @@ export const style = StyleSheet.create({
     fontSize: 14,
     color: "#666666",
     marginBottom: 13,
-    fontFamily: "DMSans_400Regular"
+    fontFamily: "DMSans_400Regular",
   },
   categorie: {
     width: "90%",
-    gap: 50,
+    gap: 10,
     display: "flex",
     flexDirection: "row",
   },
@@ -176,7 +184,7 @@ export const style = StyleSheet.create({
     fontSize: 14,
     padding: 10,
     color: "#3f3f3f",
-    fontFamily: "DMSans_400Regular"
+    fontFamily: "DMSans_400Regular",
   },
   button: {
     padding: 10,
@@ -187,6 +195,16 @@ export const style = StyleSheet.create({
     backgroundColor: "#FF6601",
     fontWeight: "700",
     color: "#fff",
+  },
+  containerCategory: {
+    display: "flex",
+    alignItems: "center",
+    alignContent: "flex-start",
+    justifyContent: "center",
+    backgroundColor: "#fff",
+    width: "48%",
+    height: 100,
+    borderRadius: 10,
   },
 });
 

@@ -1,4 +1,5 @@
-import PerfilImage from "../../assets/perfilImage";
+import WorkerPerfilImage from "../../assets/workerPerfilImage";
+import ContractorPerfilImage from "../../assets/contractorPerfilImage";
 
 import {
 	Container,
@@ -16,8 +17,13 @@ const PerfilHeaderCard = (props) => {
 		<Container>
       
       <PerfilCard>
-        <SvgController>
-          <PerfilImage />
+      <SvgController>
+        {props.isContractor ? (
+            <ContractorPerfilImage />
+        ) : (
+            <WorkerPerfilImage />
+        )}
+
         </SvgController>
       </PerfilCard>
 

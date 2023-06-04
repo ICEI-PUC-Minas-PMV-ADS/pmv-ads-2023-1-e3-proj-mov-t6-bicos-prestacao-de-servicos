@@ -6,9 +6,11 @@ import PerfilChoose from "../pages/PerfilChoose";
 import PerfilPage from "../pages/PerfilPage";
 import ServicesExplorer from "../pages/ServicesExplorer";
 import SkillExplorer from "../pages/ServicesExplorer/SkillExplorer";
-import ServicePage from "../pages/ServicesPage";
+import HomeContractor from "../pages/HomeContractor";
+import PerfilEditPage from "../pages/PerfilEditPage";
 import WorkLogin from "../pages/WorkLogin";
 import WorkSignUp from "../pages/WorkSignUp";
+import ServicePage from "../pages/ServicesPage";
 import CreateEditServices from "../pages/CreateEditServices";
 import ServicesForm from "../pages/CreateEditServices/ServicesForm";
 
@@ -31,7 +33,9 @@ export function AppRoutes() {
 			<Screen name="ServicesExplorer" component={ServicesExplorer} />
 			<Screen name="SkillExplorer" component={SkillExplorer} />
 			<Screen name="PerfilPage" component={PerfilPage} />
-			<Screen name="CreateEditServices" component={CreateEditServices} />
+			<Screen name="HomeContractor" component={HomeContractor} />
+			<Screen name="PerfilEditPage" component={PerfilEditPage} />
+      <Screen name="CreateEditServices" component={CreateEditServices} />
 			<Screen name="ServicesForm" component={ServicesForm} />
 		</Navigator>
 	);

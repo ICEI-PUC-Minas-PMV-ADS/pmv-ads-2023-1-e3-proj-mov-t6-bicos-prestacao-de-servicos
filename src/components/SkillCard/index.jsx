@@ -70,8 +70,12 @@ const SkillCard = (props) => {
 
         <Container
             onPress={() => {
-                setIsSelected(!isSelected);
-                //props.onClick(!isSelected);
+                console.log(props.withoutClick)
+                if(props.withoutClick !== true)  {
+                    props.onClick(!isSelected);
+                    setIsSelected(!isSelected);
+                }
+
             }}
             
         >

@@ -8,18 +8,15 @@ import BigBirdIcon from "../../assets/bigbird";
 import BigLocateIcon from "../../assets/bigLocate";
 import PhoneIcon from "../../assets/phone";
 import SpaceIcon from "../../assets/space";
-import StarIcon from "../../assets/star";
+import NameIcon from "../../assets/name";
+import LockerIcon from "../../assets/locker";
 
-import PerfilHeaderBird from "../../components/PerfilHeaderCard";
 import HeaderOptions from "../../components/HeaderOptions";
 import SkillCard from "../../components/SkillCard";
 import Footer from "../../components/Footer";
 import BackOptions from "../../components/BackOptions";
 
 import { 
-	Name,
-	Title,
-	Text,
 	Container, 
 	Header,
 	Orange,
@@ -28,32 +25,32 @@ import {
 	SvgController,
 	DataPerfil,
 	PerfilHeader,
-	Info,
-	Rate,
+	Box,
+	BoxInput,
+	FieldBox,
+	Fields,
+	Input,
 	Skills,
-	InfoDetail,
-	SkillInfo,
 	SkillText,
+	SkillInfo,
+	Title,
 } from "./styles";
 
 
-const PerfilPage = () => {
+ 
+const PerfilEditPage = () => {
 
     const navigation = useNavigation();
 	
-	const handleToHome = useCallback(() => {
-		navigation.navigate("Home");
-	}, []);
-
-	const handleToPerfilEditPage = useCallback(() => {
-		navigation.navigate("PerfilEditPage");
+	const handleToPerfilPage = useCallback(() => {
+		navigation.navigate("PerfilPage");
 	}, []);
 
 	return (
 		<>
     <Container>
 		<Header>
-			<Pressable onPress={handleToHome}>
+			<Pressable onPress={handleToPerfilPage}>
 				<BackOptions />
 			</Pressable>
 			<HeaderOptions />
@@ -66,29 +63,69 @@ const PerfilPage = () => {
 						<BigBirdIcon />
 					</SvgController>
 				</PerfilPhoto>
-				<Pressable onPress={handleToPerfilEditPage}>
-					<EditPerfilIcon />
-				</Pressable>
+
 			</PerfilHeader>
 			<DataPerfil>
-				<Name>Gabriel Almeida</Name>
-				<SpaceIcon />
-				<Info>
-					<InfoDetail>
-						<PhoneIcon /><Text>(31) 998765543</Text>
-					</InfoDetail>
-					<InfoDetail>
-						<MailIcon /><Text>meuemail@gmail.com</Text>
-					</InfoDetail>
-					<InfoDetail>
-						<BigLocateIcon /><Text>Niterói, RJ</Text>
-					</InfoDetail>
-				</Info>
-				<SpaceIcon />
-				<Rate>
-					<Title>Avaliação do Usuário</Title>
-					<StarIcon />
-				</Rate>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<NameIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="Nome" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<NameIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="Sobrenome" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<MailIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="Email" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<PhoneIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="nº de Celular" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<LockerIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="Senha" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
+				<Fields>
+					<FieldBox>
+						<Box>
+							<LockerIcon />
+						</Box>
+						<BoxInput>
+							<Input placeholder="Confirme a Senha" />
+						</BoxInput>
+					</FieldBox>
+				</Fields>
 				<SpaceIcon />
 				<Skills>
 					<SkillText><Title>Especialidades</Title></SkillText>
@@ -112,10 +149,10 @@ const PerfilPage = () => {
 				</Skills>
 			</DataPerfil>
 		</ContentPerfil>
-		<Footer startSelection={2}/>
+		<Footer startSelection={2} />
     </Container>
 	</>
 	);
 };
 
-export default PerfilPage;
+export default PerfilEditPage;

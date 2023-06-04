@@ -22,7 +22,7 @@ const PerfilChoose = () => {
 
 				<ContainerButton>
 					<BirdsButton title="Trabalhar" onPress={handleToWorkLogin} />
-					<BirdsButton title="Contratar" onPress={handleToHireLogin} />
+					<BirdsButton title="Contratar" onPress={handleToHireLogin} contractButton={true}/>
 				</ContainerButton>
 			</Container>
 		</BackgroundImage>
