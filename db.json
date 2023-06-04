@@ -1,11 +1,18 @@
 {
-	"users": [
-		{
-			"email": "xlrosa@gmail.com",
-			"password": "$2a$10$TNUucuBN1Zk6cY7o0dsE9OFHVscs4luhdpbcI68hAypVAa8w39VDu",
-			"name": "xl",
-			"lastName": "rosa",
-			"id": 2
-		}
-	]
+  "users": [
+    {
+      "email": "xlrosa@gmail.com",
+      "password": "$2a$10$TNUucuBN1Zk6cY7o0dsE9OFHVscs4luhdpbcI68hAypVAa8w39VDu",
+      "name": "xl",
+      "lastName": "rosa",
+      "id": 2
+    },
+    {
+      "email": "teste@gmail.com",
+      "password": "$2a$10$WjaSES39Rn2lRLjxif4oY.A56.Se6JpfcdcZQqVWrC4bEZXohhny2",
+      "name": "teste",
+      "lastName": "teste",
+      "id": 3
+    }
+  ]
 }
