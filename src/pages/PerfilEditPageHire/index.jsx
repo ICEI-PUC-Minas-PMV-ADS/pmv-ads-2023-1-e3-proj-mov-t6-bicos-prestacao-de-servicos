@@ -2,17 +2,13 @@ import React, { useCallback } from "react";
 import { useNavigation } from "@react-navigation/native";
 import { Pressable } from "react-native";
 
-import EditPerfilIcon from "../../assets/editPerfil";
 import MailIcon from "../../assets/mail";
-import BigBirdIcon from "../../assets/bigbird";
-import BigLocateIcon from "../../assets/bigLocate";
+import BigPenguin from "../../assets/bigPenguin";
 import PhoneIcon from "../../assets/phone";
-import SpaceIcon from "../../assets/space";
 import NameIcon from "../../assets/name";
 import LockerIcon from "../../assets/locker";
 
 import HeaderOptions from "../../components/HeaderOptions";
-import SkillCard from "../../components/SkillCard";
 import Footer from "../../components/Footer";
 import BackOptions from "../../components/BackOptions";
 
@@ -30,22 +26,18 @@ import {
 	FieldBox,
 	Fields,
 	Input,
-	Skills,
-	SkillText,
-	SkillInfo,
-	Title,
 	SaveButton,
 	Text
 } from "./styles";
 
 
  
-const PerfilEditPage = () => {
+const PerfilEditPageHire = () => {
 
     const navigation = useNavigation();
 	
 	const handleToPerfilPage = useCallback(() => {
-		navigation.navigate("PerfilPage");
+		navigation.navigate("PerfilPageHire");
 	}, []);
 
 	return (
@@ -62,7 +54,7 @@ const PerfilEditPage = () => {
 			<PerfilHeader>
 				<PerfilPhoto>
 					<SvgController>
-						<BigBirdIcon />
+						<BigPenguin />
 					</SvgController>
 				</PerfilPhoto>
 
@@ -75,16 +67,6 @@ const PerfilEditPage = () => {
 						</Box>
 						<BoxInput>
 							<Input placeholder="Nome" />
-						</BoxInput>
-					</FieldBox>
-				</Fields>
-				<Fields>
-					<FieldBox>
-						<Box>
-							<NameIcon />
-						</Box>
-						<BoxInput>
-							<Input placeholder="Sobrenome" />
 						</BoxInput>
 					</FieldBox>
 				</Fields>
@@ -128,36 +110,15 @@ const PerfilEditPage = () => {
 						</BoxInput>
 					</FieldBox>
 				</Fields>
-				<SpaceIcon />
-				<Skills>
-					<SkillText><Title>Especialidades</Title></SkillText>
-					<SkillInfo>
-						<SkillCard 
-							withoutClick={true} 
-							iconType={"build"} 
-							text={"Pedreiro"} 
-						/>
-						<SkillCard 
-							withoutClick={true} 
-							iconType={"car"} 
-							text={"Motorista"} 
-						/>
-						<SkillCard 
-							withoutClick={true} 
-							iconType={"book"} 
-							text={"Professor"} 
-						/>
-					</SkillInfo>
-				</Skills>
 			</DataPerfil>
 			<SaveButton onPress={handleToPerfilPage}>
 				<Text>Salvar</Text>
 			</SaveButton>
 		</ContentPerfil>
-		<Footer startSelection={2} />
+		<Footer startSelection={1} isContractorFooter={true}/>
     </Container>
 	</>
 	);
 };
 
-export default PerfilEditPage;
+export default PerfilEditPageHire;
