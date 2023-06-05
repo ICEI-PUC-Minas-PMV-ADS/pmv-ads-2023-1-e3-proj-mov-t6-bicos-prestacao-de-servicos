@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import DropDownPicker from 'react-native-dropdown-picker';
 
 import PerfilHeaderBird from "../../../components/PerfilHeaderCard";
 import HeaderOptions from "../../../components/HeaderOptions";

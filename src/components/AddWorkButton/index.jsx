@@ -12,13 +12,13 @@ import {
 const AddWorkButton = (props) => {
 
 	const navigation = useNavigation();
-    
-	const handleToService = useCallback(() => {
-		navigation.navigate("ServicesPage", { setData: props});
+
+	const handleToCreateService = useCallback(() => {
+		navigation.navigate("CreateEditServices");
 	}, []);
 
 	return (
-		<Container onPress={() => handleToService()}>
+		<Container onPress={() => handleToCreateService()}>
             <Briefcase />
             <Text>{props.text}</Text>
 		</Container>

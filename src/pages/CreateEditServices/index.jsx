@@ -26,7 +26,7 @@ import JobCard from "./JobCard";
 
 
 const getUserJobs = async () => {
-    const response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/jobs?contratante=1`)
+    const response = await axios.get(`https://my-json-server.typicode.com/cxxlt/bicos/jobs?contratante=1&situacao=aberto`)
     return response.data
 }
 
@@ -92,6 +92,7 @@ const CreateEditServices = () => {
             </JobsArea>
 
             <Footer
+                isContractorFooter={true}
                 startSelection={0}
             />
 
