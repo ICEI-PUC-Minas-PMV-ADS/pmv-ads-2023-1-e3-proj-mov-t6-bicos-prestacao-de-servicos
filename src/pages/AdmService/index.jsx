@@ -1,13 +1,16 @@
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute,  } from "@react-navigation/native";
 import { useCallback } from "react";
-import { Image, Text, View, StyleSheet, ScrollView } from "react-native";
+import { Image, Text, View, StyleSheet, ScrollView, Pressable } from "react-native";
 import img from "../../assets/image91.png";
+import EditPerfilIcon from "../../assets/editPerfil";
 
 import { MaterialIcons } from "@expo/vector-icons";
-import { AntDesign } from "@expo/vector-icons";
 import npc from "../../assets/npc1.png";
 import npc2 from "../../assets/npc2.png";
 import npc3 from "../../assets/npc3.png";
+
+
+
 import { Person } from "./person";
 
 const MOCK = [
@@ -32,40 +35,44 @@ const MOCK = [
 ];
 
 function AdmService(props) {
-  const route = useRoute();
-  console.log(route);
-  //   console.log(setData);
-  //   const navigation = useNavigation();
+   const navigation = useNavigation();
 
-  const handleToHome = useCallback(() => {
-    navigation.navigate("Home");
-  }, []);
+   const handleForm = useCallback((props) => {
+    navigation.navigate("ServicesForm", { props: 1, });
+    }, [navigation]);
+
+
   return (
     <ScrollView>
       <View style={styles.container}>
+
+        <Pressable style={styles.edit} onPress={() => handleForm(props)}>
+					<EditPerfilIcon />
+				</Pressable>
+
         <Image source={img} style={styles.imageContainer} />
 
         <View style={styles.info}>
           <View style={styles.otherInfos}>
             <View style={styles.title}>
               <MaterialIcons name="wallet-travel" size={24} color="black" />
-              <Text>{props.title}Pedreiro experiente</Text>
+              <Text style={styles.titleText}>{props.title}Pedreiro experiente</Text>
             </View>
             <View style={styles.distance}>
               <MaterialIcons name="location-on" size={24} color="orange" />
-              <Text>
+              <Text style={styles.subtitle}>
                 {props.distance}
-                10 KM de distancia
+                10 KM de distância
               </Text>
             </View>
           </View>
 
           <View>
-            <Text>R$ {props.price} p/hora</Text>
+            <Text style={styles.subtitle}>R$ {props.price} p/hora</Text>
           </View>
         </View>
-        <Text>Candidatos</Text>
-        <View>
+        <Text style={styles.subtitle}>Candidatos</Text>
+        <View style={styles.content}>
           {MOCK.map((item) => (
             <Person
               key={item.id}
@@ -82,6 +89,8 @@ function AdmService(props) {
 
 const styles = StyleSheet.create({
   container: {
+    paddingLeft: "5%",
+    paddingRight: "5%",
     width: "100%",
     height: "100%",
     display: "flex",
@@ -96,14 +105,15 @@ const styles = StyleSheet.create({
     overflow: "scroll",
   },
   imageContainer: {
-    marginTop: 20,
+    width: "100%",
+    borderRadius: 10
   },
   info: {
     display: "flex",
     justifyContent: 'space-between',
     alignItems: 'center',
     flexDirection: 'row',
-    width: '80%',
+    width: '100%',
     backgroundColor: '#fff',
     padding: 10,
     borderRadius: 6
@@ -114,12 +124,30 @@ const styles = StyleSheet.create({
   },
   title: {
     display: "flex",
-    flexDirection: "row",
+    flexDirection: "row"
   },
   distance: {
     display: "flex",
     flexDirection: "row",
   },
+  subtitle: {
+    color:"#595959",
+    fontFamily: "DMSans_500Medium"
+  },
+  titleText: {
+    fontFamily: "DMSans_700Bold",
+    fontSize: 17,
+    paddingLeft: 5
+  },
+  content: {
+    width: "100%"
+  },
+  edit: {
+    display: "flex",
+    marginTop: "8%",
+    display: "flex",
+    left: "46%",
+  }
 });
 
 export default AdmService;

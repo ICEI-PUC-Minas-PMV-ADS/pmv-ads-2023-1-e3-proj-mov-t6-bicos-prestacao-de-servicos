@@ -13,33 +13,58 @@ const Footer = (props) => {
     
 	return (
 		<Container>
-            <TopicsList 
-                startSelection={props.startSelection}
-                isContractor={props.isContractorFooter}
-                topics={
-                    [
-                        {
-                            key: 0,
-                            text: "Home",
-                            isIcon: true,
-                            isNavigator: true
-                        },
-                        {
-                            key: 1,
-                            text: "Explorar",
-                            isIcon: true,
-                            isNavigator: true
-                        },
-                        {
-                            key: 2,
-                            text: "Perfil",
-                            isIcon: true,
-                            isNavigator: true
-                        }
-                    ]
-                }
+
+            {props.isContractorFooter ? (
+                <TopicsList 
+                    startSelection={props.startSelection}
+                    isContractor={props.isContractorFooter}
+                    topics={
+                            [
+                            {
+                                key: 0,
+                                text: "Home",
+                                isIcon: true,
+                                isNavigator: true
+                            },
+                            {
+                                key: 1,
+                                text: "Perfil",
+                                isIcon: true,
+                                isNavigator: true
+                            }
+                        ]
+                    }
+                        
+                />
+            ) : (
+                <TopicsList 
+                    startSelection={props.startSelection}
+                    isContractor={props.isContractorFooter}
+                    topics={
+                        [
+                            {
+                                key: 0,
+                                text: "Home",
+                                isIcon: true,
+                                isNavigator: true
+                            },
+                            {
+                                key: 1,
+                                text: "Explorar",
+                                isIcon: true,
+                                isNavigator: true
+                            },
+                            {
+                                key: 2,
+                                text: "Perfil",
+                                isIcon: true,
+                                isNavigator: true
+                            }
+                        ]
+                    }
             
-            />
+                />
+            )}
 		</Container>
 	);
 };

@@ -15,6 +15,7 @@ function ServicePage() {
     navigation.navigate("Home");
   }, []);
 
+
   return (
     <ScrollView>
       <View style={styles.container}>
@@ -25,7 +26,7 @@ function ServicePage() {
             <Text style={styles.titleService}>{setData.title}</Text>
           </View>
           <Image
-            source={setData.imageUrl}
+            source={{uri: setData.imageUrl}}
             alt="Image work"
             style={styles.image}
           />
@@ -151,8 +152,8 @@ const styles = StyleSheet.create({
   },
   image: {
     width: 180,
-    borderRadius: 10,
-    marginBottom: 10,
+    height: 180,
+    marginBottom: 20
   },
   wrapper: {
     width: "80%",

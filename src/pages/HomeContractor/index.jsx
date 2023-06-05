@@ -27,8 +27,6 @@ const HomeContractor = () => {
 
 	const [lastFilter, setLastFilter] = useState(3)
 
-	const [filter, setFilter] = useState("")
-
 	const [isLoading, setIsLoading] = useState(true);
 
 	const [contractor, setContractor] = useState(1)
@@ -75,7 +73,6 @@ const HomeContractor = () => {
 			endpointFilter=``
 
 		}
-		setFilter(endpointFilter)
 		getJobs(endpointFilter);
 
 	}, [lastFilter])
@@ -132,6 +129,7 @@ const HomeContractor = () => {
 					<>
 						{jobs.map((job, index) => (
 							<JobCard 
+								isContractor={true}
 								key={index}
 								id={index}
 								title={job.descricao} 

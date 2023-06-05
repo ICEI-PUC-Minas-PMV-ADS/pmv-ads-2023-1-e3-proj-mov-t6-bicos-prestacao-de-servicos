@@ -13,6 +13,7 @@ import WorkSignUp from "../pages/WorkSignUp";
 import ServicePage from "../pages/ServicesPage";
 import CreateEditServices from "../pages/CreateEditServices";
 import ServicesForm from "../pages/CreateEditServices/ServicesForm";
+import AdmService from "../pages/AdmService";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -35,8 +36,9 @@ export function AppRoutes() {
 			<Screen name="PerfilPage" component={PerfilPage} />
 			<Screen name="HomeContractor" component={HomeContractor} />
 			<Screen name="PerfilEditPage" component={PerfilEditPage} />
-      <Screen name="CreateEditServices" component={CreateEditServices} />
+      		<Screen name="CreateEditServices" component={CreateEditServices} />
 			<Screen name="ServicesForm" component={ServicesForm} />
+			<Screen name="AdmService" component={AdmService} />
 		</Navigator>
 	);
 }

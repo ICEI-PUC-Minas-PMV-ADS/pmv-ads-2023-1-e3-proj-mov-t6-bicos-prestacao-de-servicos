@@ -1,8 +1,8 @@
 import { Image, StyleSheet, Text, View } from "react-native";
-import { AntDesign } from '@expo/vector-icons';
 import { MaterialIcons } from '@expo/vector-icons';
 
-
+import Check from "../../assets/check";
+import Refuse from "../../assets/refuse";
 
 export const Person = ({img, name, distance}) => {
   return (
@@ -10,14 +10,14 @@ export const Person = ({img, name, distance}) => {
       <Image source={img} alt="person" />
       <View style={style.info}>
         <Text style={style.name}>{name}</Text>
-        <Text style={style.distance}><MaterialIcons name="location-on" size={24} color="orange" /> {distance}</Text>
+        <Text style={style.distance}><MaterialIcons name="location-on" size={20} color="orange" /> {distance}</Text>
       </View>
       <View style={style.actions}>
          <Text style={style.accept}>
-            <AntDesign name="check" size={24} color="black" />
+            <Check />
          </Text>
          <Text style={style.reject}>
-            <AntDesign name="closecircleo" size={24} color="black" />
+            <Refuse />
          </Text>
       </View>
     </View>
@@ -27,7 +27,9 @@ export const Person = ({img, name, distance}) => {
 const style = StyleSheet.create({
    container: {
       display: 'flex',
+      width: "100%",
       alignItems: 'center',
+      justifyContent: "space-evenly",
       gap: 20,
       flexDirection: 'row',
       padding: 10,
@@ -40,13 +42,14 @@ const style = StyleSheet.create({
       gap: 3
    },
    name: {
-      fontWeight: '700'
+      fontFamily: "DMSans_700Bold"
    },
    distance: {
       color: 'gray',
       display: 'flex',
       alignItems: 'center',
-      justifyContent: 'center'
+      justifyContent: 'center',
+      fontFamily: "DMSans_400Regular"
    },
    actions: {
       display: 'flex',

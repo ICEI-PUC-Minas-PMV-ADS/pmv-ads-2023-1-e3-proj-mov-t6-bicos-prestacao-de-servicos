@@ -23,7 +23,11 @@ const JobCard = (props) => {
 
 	const navigation = useNavigation();
 	const handleToService = useCallback(() => {
-		navigation.navigate("ServicesPage", { setData: props});
+		if(props.isContractor === true) {
+			navigation.navigate("AdmService", { setData: props});
+		} else {
+			navigation.navigate("ServicesPage", { setData: props});
+		}
 	}, []);
 
 	function virtualOrPresencial() {
