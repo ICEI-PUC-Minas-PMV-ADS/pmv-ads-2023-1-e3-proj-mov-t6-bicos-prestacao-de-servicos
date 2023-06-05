@@ -15,10 +15,11 @@ export const Header = styled.View`
     display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	padding-bottom: 5%;
 `;
 
 export const Orange = styled.View`
-	background-color: #FE7216;
+	background-color: #FFB55E;
 	width: 100%;
 	height: 25px;
 	margin-bottom: 5%;
@@ -29,7 +30,7 @@ export const Orange = styled.View`
 export const ContentPerfil = styled.View`
 	font-weight: bold;
 	background-color: #FFF;
-	height: 85%;
+	height: 70%;
 	width: 100%;
 	border-radius: 10px;
 	margin-bottom: 3%;
@@ -67,7 +68,7 @@ export const SvgController = styled.View`
 export const DataPerfil = styled.View`
 	background-color: #F1F1F1;
 	align-self: center;
-	height: 68%;
+	height: 55%;
 	width: 85%;
 	border-radius: 10px;
 	padding: 5%;
@@ -133,11 +134,11 @@ export const Title = styled.Text`
 `;
 
 export const SaveButton = styled.Pressable`
-	margin-top: 6%;
+	margin-top: 10%;
 	height: 6%;
 	width: 85%;
 	align-self: center;
-	background-color: #FE7216;
+	background-color: #FFB55E;
 	border-radius: 10px;
 	justify-content: center;
 `;

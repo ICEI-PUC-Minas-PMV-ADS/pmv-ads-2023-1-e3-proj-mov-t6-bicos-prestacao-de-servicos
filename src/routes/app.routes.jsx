@@ -14,6 +14,8 @@ import ServicePage from "../pages/ServicesPage";
 import CreateEditServices from "../pages/CreateEditServices";
 import ServicesForm from "../pages/CreateEditServices/ServicesForm";
 import AdmService from "../pages/AdmService";
+import PerfilPageHire from "../pages/PerfilPageHire";
+import PerfilEditPageHire from "../pages/PerfilEditPageHire";
 
 const { Navigator, Screen } = createNativeStackNavigator();
 
@@ -39,6 +41,8 @@ export function AppRoutes() {
       		<Screen name="CreateEditServices" component={CreateEditServices} />
 			<Screen name="ServicesForm" component={ServicesForm} />
 			<Screen name="AdmService" component={AdmService} />
+			<Screen name="PerfilPageHire" component={PerfilPageHire} />
+			<Screen name="PerfilEditPageHire" component={PerfilEditPageHire} />
 		</Navigator>
 	);
 }

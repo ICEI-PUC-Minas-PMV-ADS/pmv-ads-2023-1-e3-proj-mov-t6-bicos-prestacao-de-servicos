@@ -81,7 +81,7 @@ const HomeContractor = () => {
 		<Container>
 			<Header>
 				<PerfilHeaderBird 
-                    title="Gabriel" 
+                    title="João Silva" 
                     isContractor={true}
                 />
 				<HeaderOptions isContractor={true}/>

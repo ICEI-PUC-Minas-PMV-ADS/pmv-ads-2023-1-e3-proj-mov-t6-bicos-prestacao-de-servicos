@@ -26,7 +26,6 @@ const TopicsList = (props) => {
 	}, []);
 
     const handleToHome = useCallback(() => {
-        console.log(props.isContractor)
         if(props.isContractor == true) {
             navigation.navigate("HomeContractor");
 
@@ -37,7 +36,13 @@ const TopicsList = (props) => {
 	}, []);
 
     const handleToPerfil = useCallback(() => {
-		navigation.navigate("PerfilPage");
+		
+        if(props.isContractor == true) {
+           navigation.navigate("PerfilPageHire");
+
+        } else {
+            navigation.navigate("PerfilPage");
+        }
 	}, []);
 
 
