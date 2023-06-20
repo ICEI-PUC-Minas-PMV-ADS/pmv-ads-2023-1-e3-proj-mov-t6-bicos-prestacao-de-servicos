@@ -1,6 +1,6 @@
 import { useNavigation, useRoute } from "@react-navigation/native";
 import { useCallback } from "react";
-import { Image, Text, View, StyleSheet, ScrollView } from "react-native";
+import { Alert, Image, Text, View, StyleSheet, ScrollView } from "react-native";
 import { Entypo } from "@expo/vector-icons";
 import { FontAwesome5 } from "@expo/vector-icons";
 import { AntDesign } from "@expo/vector-icons";
@@ -14,6 +14,18 @@ function ServicePage() {
   const handleToHome = useCallback(() => {
     navigation.navigate("Home");
   }, []);
+
+  const showAlert = () =>
+  Alert.alert(
+    'Inscrição confirmada',
+    'Aplicado para a vaga selecionada com sucesso!',
+    [
+      {
+        text: 'Ok',
+        onPress: () => handleToHome(),
+      },
+    ]
+  );
 
 
   return (
@@ -79,10 +91,7 @@ function ServicePage() {
         </View>
 
         <Text
-          onPress={() => {
-            alert("Aplicado para a vaga com sucesso!"); // Exibe um alerta informando que a vaga foi aplicada com sucesso
-            handleToHome(); // Navega para a rota "Home" quando o botão é pressionado
-          }}
+          onPress={showAlert}
           style={styles.button}
         >
           Aplicar a vaga
