@@ -268,5 +268,5 @@ Os artefatos foram dividos entre os membros do grupo e todos estão participando
   
  <h5>Algumas divididas, outras desenvolvidas em conjunto, conforme commits no Github e ferramenta de gerenciamento abaixo:</h6>
 
-![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/clickup1etapa3.png)
-![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/clickup2etapa3.png)
+![image](https://raw.githubusercontent.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-1-e3-proj-mov-t6-bicos-prestacao-de-servicos/main/docs/img/clickUp%20final.png)
+
